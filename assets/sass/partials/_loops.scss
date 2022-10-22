@@ -1,0 +1,117 @@
+@import "_variables";
+
+
+/* ==== Primary Color Swatches ==== */
+@each $key, $primary-color in $primary-colors {
+    .text-primary-#{$key} {color: $primary-color;}
+    .bg-primary-#{$key} {background-color: $primary-color;}
+}
+
+
+/* ==== Scondary Color Swatches ==== */
+@each $key, $secondary-color in $secondary-colors {
+    .text-secondary-#{$key} {color: $secondary-color;}
+    .bg-secondary-#{$key} {background-color: $primary-color;}
+}
+
+
+/* ==== Gray Color Swatches ==== */
+@each $key, $gray in $grays {
+    .gray-#{$key} {color: $gray;}
+    .bg-gray-#{$key} {background-color: $gray;}
+}
+
+
+/* ==== Black Color Swatches ==== */
+@each $key, $gray in $grays {
+    .text-gray-#{$key} {color: $gray;}
+    .bg-gray-#{$key} {background-color: $gray;}
+}
+
+
+
+
+/* ==== Heading Sizes ==== */
+@each $key, $heading-size in $heading-sizes {
+    h#{$key}, .h#{$key} {
+        font-size: calc($heading-size / $body-text) + rem;
+        // margin: 0;
+    }
+}
+
+
+/* ==== Body Text Sizes ==== */
+.line-height{line-height: 150%;}
+
+@each $key, $body-size in $body-text-sizes {
+
+    @if $key == ''{
+        .text#{$key} {
+            font-size: calc($body-size / $body-text) + rem; 
+            @extend .line-height;
+        }
+    }@else{
+        .text-#{$key} {
+            font-size: calc($body-size / $body-text) + rem; 
+            @extend .line-height;
+        }
+    }
+}
+
+
+/* ==== font Weights ==== */
+@each $key, $font-weight in $weights{
+    .weight-#{$key} {font-weight: $font-weight;}
+}
+
+
+/* ==== Spacing ==== */
+@each $space in $spacers{
+    // padding
+    .p-#{$space} {padding: calc($space / $body-text) + rem;}
+    .pt-#{$space} {padding-top: calc($space / $body-text) + rem;}
+    .pb-#{$space} {padding-bottom: calc($space / $body-text) + rem;}
+    .pl-#{$space} {padding-left: calc($space / $body-text) + rem;}
+    .pr-#{$space} {padding-right: calc($space / $body-text) + rem;}
+    .px-#{$space} {padding-left: calc($space / $body-text) + rem; padding-right: calc($space / $body-text) + rem;}
+    .py-#{$space} {padding-top: calc($space / $body-text) + rem; padding-bottom: calc($space / $body-text) + rem;}
+
+    // margin
+    .m-#{$space} {margin: calc($space / $body-text) + rem;}
+    .mt-#{$space} {margin-top: calc($space / $body-text) + rem;}
+    .mb-#{$space} {margin-bottom: calc($space / $body-text) + rem;}
+    .ml-#{$space} {margin-left: calc($space / $body-text) + rem;}
+    .mr-#{$space} {margin-right: calc($space / $body-text) + rem;}
+    .mx-#{$space} {margin-left: calc($space / $body-text) + rem; margin-right: calc($space / $body-text) + rem;}
+    .my-#{$space} {margin-top: calc($space / $body-text) + rem; margin-bottom: calc($space / $body-text) + rem;}
+}
+
+
+
+
+/* ==== Border radius ==== */
+@each $corner in $Radius{
+    .border-radius-#{$corner} {
+        @include border-radius($corner, $corner, $corner, $corner);
+    }
+    .border-top-#{$corner} {
+        @include border-radius($corner, $corner, 0, 0);
+    }
+    .border-bottom-#{$corner} {
+        @include border-radius(0, 0, $corner, $corner);
+    }
+    .border-left-#{$corner} {
+        @include border-radius($corner, 0, 0, $corner);
+    }
+    .border-right-#{$corner} {
+        @include border-radius(0, $corner, $corner, 0);
+    }
+}
+
+
+/* ==== Shadows ==== */
+@each $keys, $shadow in $shadows{
+    .shadow-#{$keys} {
+        @include box-shadow($shadow);
+    }
+}

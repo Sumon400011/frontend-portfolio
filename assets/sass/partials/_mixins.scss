@@ -1,0 +1,84 @@
+@import "_variables";
+
+@mixin border($val, $border-type, $color){
+    border: $val+px $border-type $color;
+}
+
+@mixin border-radius($val1, $val2, $val3, $val4){
+    border-radius: $val1+px $val2+px $val3+px $val4+px;
+}
+
+@mixin shadow($X, $Y, $B, $color){
+    box-shadow: $X+px $Y+px $B+px $color;
+}
+
+@mixin box-shadow($shadows){
+    box-shadow: $shadows;
+}
+
+@mixin make-padding($pval1, $pval2, $pval3, $pval4){
+    padding: calc($pval1/16)+rem calc($pval2/16)+rem calc($pval3/16)+rem calc($pval4/16)+rem;
+}
+
+// ===== Butons ===============
+@mixin btn-properties{
+    font-size: calc($body-text / 16) + rem;
+    line-height: 1;
+    text-align: center;
+    font-weight: $weight-semi-bold;
+    vertical-align: middle;
+}
+
+@mixin btn{
+    @include make-padding($btn-p12, $btn-p12*2, $btn-p12, $btn-p12*2);
+}
+
+@mixin btn-lg{
+    @include make-padding($btn-p12, $btn-p40, $btn-p12, $btn-p40);
+}
+
+// right icon btn
+@mixin btn-right-icon{
+    @include make-padding($btn-p12, $btn-p12+6, $btn-p12, $btn-p12*2);
+}
+
+@mixin btn-right-icon-lg{
+    @include make-padding($btn-p12, $btn-p30 - 8, $btn-p12, $btn-p30);
+}
+// left icon btn
+@mixin btn-left-icon{
+    @include make-padding($btn-p12, $btn-p12+6, $btn-p12, $btn-p12*2);
+}
+
+@mixin btn-left-icon-lg{
+    @include make-padding($btn-p12, $btn-p30, $btn-p12, $btn-p30 - 8);
+}
+
+
+
+// Primary btns mixins
+@mixin btn-primary{
+    background-color: $primary-color;
+    color: $white-color;
+    @include border(2, solid, transparent);
+}
+
+@mixin btn-outline-primary{
+    background-color: $white-color;
+    color: $primary-color;
+    @include border(2, solid, $primary-color);
+}
+
+// Secondary btns mixins
+@mixin btn-secondary{
+    background-color: $secondary-color;
+    color: $white-color;
+    @include border(2, solid, transparent);
+}
+
+@mixin btn-outline-secondary{
+    background-color: $white-color;
+    color: $secondary-color;
+    @include border(2, solid, $secondary-color);
+}
+
