@@ -32,12 +32,11 @@
 
 
 /* ==== Heading Sizes ==== */
-@each $key, $heading-size in $heading-sizes {
-    h#{$key}, .h#{$key} {
-        font-size: calc($heading-size / $body-text) + rem;
-        // margin: 0;
-    }
-}
+// @each $key, $heading-size in $heading-sizes {
+//     h#{$key}, .h#{$key} {
+//         font-size: calc($heading-size / $body-text) + rem;
+//     }
+// }
 
 
 /* ==== Body Text Sizes ==== */
