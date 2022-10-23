@@ -13,6 +13,7 @@
 .btn-left-icon-lg{
     @include btn-properties;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn{

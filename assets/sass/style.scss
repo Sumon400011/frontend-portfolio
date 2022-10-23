@@ -2,6 +2,7 @@
 @import "partials/_mixins";
 @import "partials/_loops";
 @import "partials/_buttons";
+@import "partials/_typography";
 
 html, body{
     font-family: $font-family !important;
@@ -79,6 +80,41 @@ section{
 .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
     --bs-gutter-x: 0rem;
 }
+/* ====== Menu | Navbar ======= */
+#menu{
+    &.bg-secondary-100{
+        background-color: $secondary-100 !important;
+        transition: 0.25 background-color;
+    }
+    nav{
+        height: 80px;
+        // background-color: $white-color;
+    
+        .navbar-nav{
+            .nav-item{
+                color: $gray-1!important;
+                font-size: 1rem!important;
+                font-weight: $weight-semi-bold!important;
+    
+                &.active{
+                    color: $primary-color !important;
+                }
+                
+                .nav-link{
+                    @include make-padding($btn-p8, $btn-p12, $btn-p8, $btn-p12);
+                    @extend .nav-item;
+    
+                    &:hover{
+                        color: $primary-color !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 /* ====== Banner Section ======= */
 #banner-section{
     overflow: hidden;
@@ -93,7 +129,7 @@ section{
             }
             .banner-img{
                 width: 100%;
-                max-width: 570px;
+                max-width: 450px;
                 z-index: 3;
             }
             .circle-svg{
@@ -235,7 +271,10 @@ section{
         padding-right: $space-45 + px;
     }
     .display-1{
-        font-size: calc($display-1 / $body-text - 2)+rem;
+        font-size: calc($display-1 / $body-text - 1)+rem;
+    }
+    h4 {
+        font-size: calc(1.275rem + 0.2vw);
     }
 
     /* ====== Banner Section ======= */
@@ -243,8 +282,8 @@ section{
         .container{
             .row{
                 .banner-img{
-                    max-width: 55vh;
-                    // max-width: 380px;
+                    // max-width: 55vh;
+                    max-width: 350px;
                 }
                 .description{
                     max-width: 465px;
