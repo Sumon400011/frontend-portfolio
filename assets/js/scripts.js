@@ -1,12 +1,18 @@
 $(document).ready(function(){
     $(window).scroll(function() {    
-        // let top = $(this).offset().top;
         let top = $(window).scrollTop();
         if(top >= 90){
-            $("#menu").addClass("bg-secondary-100").addClass("shadow-md");
+            $("#menu").css({
+                backgroundColor: "rgba(254, 245, 237, 1)", //bg-secondary-100
+                boxShadow:"6px 6px 20px rgba(0, 0, 0, 0.1)",
+                transition: "0.3s"
+            });
         }else{
-            $("#menu").removeClass("bg-secondary-100").removeClass("shadow-md");
+            $("#menu").css({
+                backgroundColor: "rgba(255, 255, 255, 1)",
+                boxShadow:"none",
+                transition: "0.3s"
+            });
         }
     });
 });
-

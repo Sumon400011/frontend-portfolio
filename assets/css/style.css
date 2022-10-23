@@ -3743,10 +3743,13 @@ section {
 }
 
 /* ====== Menu | Navbar ======= */
+#menu {
+  background-color: #ffffff;
+}
 #menu.bg-secondary-100 {
   background-color: #FEF5ED !important;
-  -webkit-transition: 0.25 background-color;
-  transition: 0.25 background-color;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 #menu nav {
   height: 80px;

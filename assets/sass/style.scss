@@ -82,9 +82,10 @@ section{
 }
 /* ====== Menu | Navbar ======= */
 #menu{
+    background-color: $white-color;
     &.bg-secondary-100{
         background-color: $secondary-100 !important;
-        transition: 0.25 background-color;
+        transition: 0.3s all;
     }
     nav{
         height: 80px;
