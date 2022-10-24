@@ -37,7 +37,7 @@
 }
 
 .bg-secondary-100 {
-  background-color: #84CC16;
+  background-color: #FEF5ED;
 }
 
 .text-secondary-300 {
@@ -45,7 +45,7 @@
 }
 
 .bg-secondary-300 {
-  background-color: #84CC16;
+  background-color: #FCE5D2;
 }
 
 .text-secondary-500 {
@@ -53,7 +53,7 @@
 }
 
 .bg-secondary-500 {
-  background-color: #84CC16;
+  background-color: #F8CCA4;
 }
 
 .text-secondary-700 {
@@ -61,7 +61,7 @@
 }
 
 .bg-secondary-700 {
-  background-color: #84CC16;
+  background-color: #F5B277;
 }
 
 /* ==== Gray Color Swatches ==== */
@@ -1192,7 +1192,7 @@
 }
 
 .bg-secondary-100 {
-  background-color: #84CC16;
+  background-color: #FEF5ED;
 }
 
 .text-secondary-300 {
@@ -1200,7 +1200,7 @@
 }
 
 .bg-secondary-300 {
-  background-color: #84CC16;
+  background-color: #FCE5D2;
 }
 
 .text-secondary-500 {
@@ -1208,7 +1208,7 @@
 }
 
 .bg-secondary-500 {
-  background-color: #84CC16;
+  background-color: #F8CCA4;
 }
 
 .text-secondary-700 {
@@ -1216,7 +1216,7 @@
 }
 
 .bg-secondary-700 {
-  background-color: #84CC16;
+  background-color: #F5B277;
 }
 
 /* ==== Gray Color Swatches ==== */
@@ -2477,7 +2477,7 @@
 }
 
 .bg-secondary-100 {
-  background-color: #84CC16;
+  background-color: #FEF5ED;
 }
 
 .text-secondary-300 {
@@ -2485,7 +2485,7 @@
 }
 
 .bg-secondary-300 {
-  background-color: #84CC16;
+  background-color: #FCE5D2;
 }
 
 .text-secondary-500 {
@@ -2493,7 +2493,7 @@
 }
 
 .bg-secondary-500 {
-  background-color: #84CC16;
+  background-color: #F8CCA4;
 }
 
 .text-secondary-700 {
@@ -2501,7 +2501,7 @@
 }
 
 .bg-secondary-700 {
-  background-color: #84CC16;
+  background-color: #F5B277;
 }
 
 /* ==== Gray Color Swatches ==== */
@@ -3594,66 +3594,6 @@
 }
 
 /* ====== Media Queries for headings ======= */
-@media (max-width: 1024px) {
-  h1, .h1 {
-    font-size: 63.875rem;
-  }
-  h2, .h2 {
-    font-size: 47.875rem;
-  }
-  h3, .h3 {
-    font-size: 39.875rem;
-  }
-  h4, .h4 {
-    font-size: 31.875rem;
-  }
-  h5, .h5 {
-    font-size: 23.875rem;
-  }
-  h6, .h6 {
-    font-size: 19.875rem;
-  }
-}
-@media (max-width: 768px) {
-  h1, .h1 {
-    font-size: 63.875rem;
-  }
-  h2, .h2 {
-    font-size: 47.875rem;
-  }
-  h3, .h3 {
-    font-size: 39.875rem;
-  }
-  h4, .h4 {
-    font-size: 31.875rem;
-  }
-  h5, .h5 {
-    font-size: 23.875rem;
-  }
-  h6, .h6 {
-    font-size: 19.875rem;
-  }
-}
-@media (max-width: 575px) {
-  h1, .h1 {
-    font-size: 63.875rem;
-  }
-  h2, .h2 {
-    font-size: 47.875rem;
-  }
-  h3, .h3 {
-    font-size: 39.875rem;
-  }
-  h4, .h4 {
-    font-size: 31.875rem;
-  }
-  h5, .h5 {
-    font-size: 23.875rem;
-  }
-  h6, .h6 {
-    font-size: 19.875rem;
-  }
-}
 html, body {
   font-family: "Inter", sans-serif !important;
   font-size: 16px;
@@ -3754,6 +3694,12 @@ section {
 #menu nav {
   height: 80px;
 }
+#menu nav .navbar-toggler, #menu nav .sidebar .btn-close {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
 #menu nav .navbar-nav .nav-item, #menu nav .navbar-nav .nav-item .nav-link {
   color: #52525B !important;
   font-size: 1rem !important;
@@ -3768,7 +3714,9 @@ section {
 #menu nav .navbar-nav .nav-item .nav-link:hover {
   color: #84CC16 !important;
 }
-
+#menu nav .sidebar {
+  display: none;
+}
 /* ====== Banner Section ======= */
 #banner-section {
   overflow: hidden;
@@ -3984,7 +3932,27 @@ section {
   }
 }
 @media (max-width: 991px) {
-  section {
+  /* ====== Menu | Navbar ======= */
+  #menu {
+    background-color: #ffffff;
+  }
+  #menu.bg-secondary-100 {
+    background-color: #FEF5ED !important;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+  #menu nav {
+    height: auto;
+  }
+  #menu nav .navbar-collapse {
+    display: none;
+  }
+  #menu nav .sidebar {
+    display: block;
+  }
+  .sidebar .offcanvas-header,
+.sidebar .offcanvas-body,
+section {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -4023,7 +3991,9 @@ section {
   }
 }
 @media (max-width: 768px) {
-  section {
+  .sidebar .offcanvas-header,
+.sidebar .offcanvas-body,
+section {
     padding-left: 15px;
     padding-right: 15px;
   }

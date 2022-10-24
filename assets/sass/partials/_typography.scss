@@ -14,26 +14,26 @@
     // }
 }
 
-@media (max-width: $breakpoint-1024) {
-    @each $key, $heading-size in $heading-sizes {
-        h#{$key}, .h#{$key} {
-            font-size: calc($heading-size - 2 / $body-text) + rem;
-        }
-    }
-}
+// @media (max-width: $breakpoint-1024) {
+//     @each $key, $heading-size in $heading-sizes {
+//         h#{$key}, .h#{$key} {
+//             font-size: calc($heading-size - 2 / $body-text) + rem;
+//         }
+//     }
+// }
 
-@media (max-width: $breakpoint-768) {
-    @each $key, $heading-size in $heading-sizes {
-        h#{$key}, .h#{$key} {
-            font-size: calc($heading-size - 2 / $body-text) + rem;
-        }
-    }
-}
+// @media (max-width: $breakpoint-768) {
+//     @each $key, $heading-size in $heading-sizes {
+//         h#{$key}, .h#{$key} {
+//             font-size: calc($heading-size - 2 / $body-text) + rem;
+//         }
+//     }
+// }
 
-@media (max-width: $breakpoint-575) {
-    @each $key, $heading-size in $heading-sizes {
-        h#{$key}, .h#{$key} {
-            font-size: calc($heading-size - 2 / $body-text) + rem;
-        }
-    }
-}
+// @media (max-width: $breakpoint-575) {
+//     @each $key, $heading-size in $heading-sizes {
+//         h#{$key}, .h#{$key} {
+//             font-size: calc($heading-size - 2 / $body-text) + rem;
+//         }
+//     }
+// }

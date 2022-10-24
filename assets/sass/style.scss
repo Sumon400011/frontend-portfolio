@@ -90,7 +90,12 @@ section{
     nav{
         height: 80px;
         // background-color: $white-color;
-    
+        
+        .navbar-toggler{
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
         .navbar-nav{
             .nav-item{
                 color: $gray-1!important;
@@ -109,6 +114,12 @@ section{
                         color: $primary-color !important;
                     }
                 }
+            }
+        }
+        .sidebar{
+            display: none;
+            .btn-close{
+                @extend .navbar-toggler;
             }
         }
     }
@@ -356,7 +367,36 @@ section{
         }
     }
 }
+
+
 @media (max-width: $breakpoint-991) {
+    /* ====== Menu | Navbar ======= */
+    #menu{
+        background-color: $white-color;
+        &.bg-secondary-100{
+            background-color: $secondary-100 !important;
+            transition: 0.3s all;
+        }
+        nav{
+            height: auto;
+            
+            // .navbar-toggler{
+                
+            // }
+            // .navbar-nav{
+                
+            // }
+            .navbar-collapse{
+                display: none;
+            }
+            .sidebar{
+                display: block;
+            }
+        }
+    }
+
+    .sidebar .offcanvas-header,
+    .sidebar .offcanvas-body,
     section{
         padding-left: $space-32 + px;
         padding-right: $space-32 + px;
@@ -403,6 +443,8 @@ section{
 }
 
 @media (max-width: $breakpoint-768) {
+    .sidebar .offcanvas-header,
+    .sidebar .offcanvas-body,
     section{
         padding-left: $space-15 + px;
         padding-right: $space-15 + px;

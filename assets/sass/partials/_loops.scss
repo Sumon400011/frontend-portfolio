@@ -11,7 +11,7 @@
 /* ==== Scondary Color Swatches ==== */
 @each $key, $secondary-color in $secondary-colors {
     .text-secondary-#{$key} {color: $secondary-color;}
-    .bg-secondary-#{$key} {background-color: $primary-color;}
+    .bg-secondary-#{$key} {background-color: $secondary-color;}
 }
 
 
