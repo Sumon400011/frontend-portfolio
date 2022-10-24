@@ -1,5 +1,6 @@
 @import "_variables";
 
+// ===== border ===============
 @mixin border($val, $border-type, $color){
     border: $val+px $border-type $color;
 }
@@ -8,6 +9,7 @@
     border-radius: $val1+px $val2+px $val3+px $val4+px;
 }
 
+// ===== shadows ===============
 @mixin shadow($X, $Y, $B, $color){
     box-shadow: $X+px $Y+px $B+px $color;
 }
@@ -16,9 +18,53 @@
     box-shadow: $shadows;
 }
 
+
+// ===== spacing ===============
 @mixin make-padding($pval1, $pval2, $pval3, $pval4){
     padding: calc($pval1/16)+rem calc($pval2/16)+rem calc($pval3/16)+rem calc($pval4/16)+rem;
 }
+
+@mixin padding-classes($size-name, $space){
+    @if $size-name == ''{
+        .p-#{$space} {padding: calc($space / $body-text) + rem;}
+        .pt-#{$space} {padding-top: calc($space / $body-text) + rem;}
+        .pb-#{$space} {padding-bottom: calc($space / $body-text) + rem;}
+        .pl-#{$space} {padding-left: calc($space / $body-text) + rem;}
+        .pr-#{$space} {padding-right: calc($space / $body-text) + rem;}
+        .px-#{$space} {padding-left: calc($space / $body-text) + rem; padding-right: calc($space / $body-text) + rem;}
+        .py-#{$space} {padding-top: calc($space / $body-text) + rem; padding-bottom: calc($space / $body-text) + rem;}
+
+        // margin
+        .m-#{$space} {margin: calc($space / $body-text) + rem;}
+        .mt-#{$space} {margin-top: calc($space / $body-text) + rem;}
+        .mb-#{$space} {margin-bottom: calc($space / $body-text) + rem;}
+        .ml-#{$space} {margin-left: calc($space / $body-text) + rem;}
+        .mr-#{$space} {margin-right: calc($space / $body-text) + rem;}
+        .mx-#{$space} {margin-left: calc($space / $body-text) + rem; margin-right: calc($space / $body-text) + rem;}
+        .my-#{$space} {margin-top: calc($space / $body-text) + rem; margin-bottom: calc($space / $body-text) + rem;}
+    }@else{
+        // padding
+        .p-#{$size-name}-#{$space} {padding: calc($space / $body-text) + rem;}
+        .pt-#{$size-name}-#{$space} {padding-top: calc($space / $body-text) + rem;}
+        .pb-#{$size-name}-#{$space} {padding-bottom: calc($space / $body-text) + rem;}
+        .pl-#{$size-name}-#{$space} {padding-left: calc($space / $body-text) + rem;}
+        .pr-#{$size-name}-#{$space} {padding-right: calc($space / $body-text) + rem;}
+        .px-#{$size-name}-#{$space} {padding-left: calc($space / $body-text) + rem; padding-right: calc($space / $body-text) + rem;}
+        .py-#{$size-name}-#{$space} {padding-top: calc($space / $body-text) + rem; padding-bottom: calc($space / $body-text) + rem;}
+
+        // margin
+        .m-#{$size-name}-#{$space} {margin: calc($space / $body-text) + rem;}
+        .mt-#{$size-name}-#{$space} {margin-top: calc($space / $body-text) + rem;}
+        .mb-#{$size-name}-#{$space} {margin-bottom: calc($space / $body-text) + rem;}
+        .ml-#{$size-name}-#{$space} {margin-left: calc($space / $body-text) + rem;}
+        .mr-#{$size-name}-#{$space} {margin-right: calc($space / $body-text) + rem;}
+        .mx-#{$size-name}-#{$space} {margin-left: calc($space / $body-text) + rem; margin-right: calc($space / $body-text) + rem;}
+        .my-#{$size-name}-#{$space} {margin-top: calc($space / $body-text) + rem; margin-bottom: calc($space / $body-text) + rem;}
+    }
+    
+}
+
+
 
 // ===== Butons ===============
 @mixin btn-properties{

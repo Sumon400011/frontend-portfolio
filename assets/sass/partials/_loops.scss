@@ -66,23 +66,24 @@
 
 /* ==== Spacing ==== */
 @each $space in $spacers{
-    // padding
-    .p-#{$space} {padding: calc($space / $body-text) + rem;}
-    .pt-#{$space} {padding-top: calc($space / $body-text) + rem;}
-    .pb-#{$space} {padding-bottom: calc($space / $body-text) + rem;}
-    .pl-#{$space} {padding-left: calc($space / $body-text) + rem;}
-    .pr-#{$space} {padding-right: calc($space / $body-text) + rem;}
-    .px-#{$space} {padding-left: calc($space / $body-text) + rem; padding-right: calc($space / $body-text) + rem;}
-    .py-#{$space} {padding-top: calc($space / $body-text) + rem; padding-bottom: calc($space / $body-text) + rem;}
-
-    // margin
-    .m-#{$space} {margin: calc($space / $body-text) + rem;}
-    .mt-#{$space} {margin-top: calc($space / $body-text) + rem;}
-    .mb-#{$space} {margin-bottom: calc($space / $body-text) + rem;}
-    .ml-#{$space} {margin-left: calc($space / $body-text) + rem;}
-    .mr-#{$space} {margin-right: calc($space / $body-text) + rem;}
-    .mx-#{$space} {margin-left: calc($space / $body-text) + rem; margin-right: calc($space / $body-text) + rem;}
-    .my-#{$space} {margin-top: calc($space / $body-text) + rem; margin-bottom: calc($space / $body-text) + rem;}
+    @media (min-width: 0px) {
+        @include padding-classes('', $space);
+    }
+    @media (min-width: ($breakpoint-575 + 1) ) {
+        @include padding-classes(sm, $space);
+    }
+    @media (min-width: $breakpoint-768) {
+        @include padding-classes(md, $space);
+    }
+    @media (min-width: ($breakpoint-991 + 1) ) {
+        @include padding-classes(lg, $space);
+    }
+    @media (min-width: $breakpoint-1024) {
+        @include padding-classes(xl, $space);
+    }
+    @media (min-width: $breakpoint-1440) {
+        @include padding-classes(xxl, $space);
+    }
 }
 
 

@@ -76,7 +76,8 @@ $body-text-lg: 20;
 $body-text-md: 18;
 $body-text: 16;
 $body-text-sm: 14;
-$body-text-sizes: (lg: $body-text-lg, md: $body-text-md, '': $body-text, sm: $body-text-sm);
+$body-text-xs: 12;
+$body-text-sizes: (lg: $body-text-lg, md: $body-text-md, '': $body-text, sm: $body-text-sm, xs: $body-text-xs);
 
 
 // font weights
@@ -106,9 +107,14 @@ $gutters: (15, 20, 30, 40, 45);
 
 
 // ===============================
-// =========== Radius ===========
+// =========== Radius ============
 // ===============================
-$Radius: (8, 12, 20, 40);
+$radius-8: 8;
+$radius-12: 12;
+$radius-20: 20;
+$radius-25: 25;
+$radius-40: 40;
+$Radius: (8, 12, 20, 25, 40);
 
 
 
@@ -156,7 +162,7 @@ $columns: 12;
 
 // ===============================
 // =========== Buttons ===========
-// ==============================
+// ===============================
 
 // Button spacing
 $btn-p8: 8;

@@ -80,6 +80,9 @@ section{
 .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
     --bs-gutter-x: 0rem;
 }
+
+
+
 /* ====== Menu | Navbar ======= */
 #menu{
     background-color: $white-color;
@@ -223,6 +226,11 @@ section{
     }
 }
 
+/* ====== Footer Section ======= */
+// #footer{
+//     @include border-radius($radius-25, $radius-25, 0, 0);
+// }
+
 
 /* ======== Animations Keyframes ======== */
 @keyframes CircleScaling {
@@ -275,6 +283,14 @@ section{
         padding-left: $space-45 + px;
         padding-right: $space-45 + px;
     }
+    
+    /* ====== Footer Section ======= */
+    #footer{
+        .footer-title{
+            font-size: calc($heading-2 / $body-text)+rem;
+        }
+    }
+
 }
 
 @media (max-width: ($breakpoint-1440) ) {
@@ -338,6 +354,29 @@ section{
                 }
             }
             
+        }
+    }
+
+    /* ====== Footer ======= */
+    #footer{
+        .footer-title{
+            font-size: calc($heading-3 / $body-text)+rem;
+        }
+        .footer-links-module{
+            .nav-link{
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+        .footer-social-links-module{
+            .nav-link{
+                font-size: 1.2rem;
+                padding: 8px;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
         }
     }
 }
@@ -438,6 +477,13 @@ section{
                     left: 82%;
                 }
             }
+        }
+    }
+
+    /* ====== Footer ======= */
+    #footer{
+        .footer-title{
+            font-size: calc($heading-4 / $body-text)+rem;
         }
     }
 }
