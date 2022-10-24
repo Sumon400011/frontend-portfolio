@@ -15,27 +15,34 @@
     text-decoration: none;
 }
 
+.button,
 .btn{
     @include btn;
 }
+.button-lg,
 .btn-lg{
     @include btn-lg;
 }
+.button-right-icon,
 .btn-right-icon{
     @include btn-right-icon;
 }
+.button-left-icon,
 .btn-left-icon{
     @include btn-left-icon;
 }
 
+.button-right-icon-lg,
 .btn-right-icon-lg{
     @include btn-right-icon-lg;
 }
+.button-left-icon-lg,
 .btn-left-icon-lg{
     @include btn-left-icon-lg;
 }
 
 // primary btn
+.button-primary,
 .btn-primary{
     @include btn-primary;
     @include border-radius(8, 8, 8, 8);
@@ -64,6 +71,7 @@
 }
 
 // primary Outline btn
+.button-outline-primary,
 .btn-outline-primary{
     @include btn-outline-primary;
     @include border-radius(8, 8, 8, 8);
@@ -78,6 +86,7 @@
 
 
 // Secondary btn
+.button-secondary,
 .btn-secondary{
     @include btn-secondary;
     @include border-radius(8, 8, 8, 8);
@@ -106,6 +115,7 @@
 }
 
 // Secondary Outline btn
+.button-outline-secondary,
 .btn-outline-secondary{
     @include btn-outline-secondary;
     @include border-radius(8, 8, 8, 8);

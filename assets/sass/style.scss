@@ -3,6 +3,7 @@
 @import "partials/_loops";
 @import "partials/_buttons";
 @import "partials/_typography";
+@import "partials/_input";
 
 html, body{
     font-family: $font-family !important;
@@ -225,6 +226,26 @@ section{
         }
     }
 }
+
+
+/* ====== Contact Section ======= */
+#contact {
+    .media{
+        border-radius: 8px;
+        max-width: 382px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+            box-shadow: $shadow-md;
+            transition: 0.3s;
+        }
+        .icon-span{
+            font-size: calc($heading-3 / $body-text)+rem;
+            color: $primary-color!important;
+        }
+    }
+}
+
 
 /* ====== Footer Section ======= */
 // #footer{
