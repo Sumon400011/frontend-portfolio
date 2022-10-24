@@ -16,3 +16,30 @@ $(document).ready(function(){
         }
     });
 });
+
+// Slider for testimonial
+$(document).ready(function() {
+    // $(' owl-theme').addClass('owl-theme');
+    $('.testimonial-slider').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        smartSpeed: 1500,
+        responsive:{
+            0:{
+                items:1
+            },
+            900:{
+                items:1
+            },
+            1300:{
+                items:2
+            },
+            1600:{
+                items:2
+            }
+        }
+    })
+});

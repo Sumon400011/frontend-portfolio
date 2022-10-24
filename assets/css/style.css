@@ -4263,6 +4263,26 @@
   border-radius: 0px 12px 12px 0px;
 }
 
+.border-radius-15 {
+  border-radius: 15px 15px 15px 15px;
+}
+
+.border-top-15 {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.border-bottom-15 {
+  border-radius: 0px 0px 15px 15px;
+}
+
+.border-left-15 {
+  border-radius: 15px 0px 0px 15px;
+}
+
+.border-right-15 {
+  border-radius: 0px 15px 15px 0px;
+}
+
 .border-radius-20 {
   border-radius: 20px 20px 20px 20px;
 }
@@ -4756,6 +4776,26 @@ h6, .h6 {
   letter-spacing: 2%;
 }
 
+.text-styled {
+  position: relative;
+  z-index: 10;
+  display: inline;
+}
+.text-styled::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  background-color: #E0F2C5;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  z-index: -1;
+}
+
 p {
   font-size: 1rem;
   line-height: 150%;
@@ -4925,6 +4965,38 @@ section {
   bottom: 80px;
   left: 40%;
   opacity: 0.7;
+}
+
+/* ====== Testimonial Section ======= */
+#testimonial {
+  overflow: hidden;
+  position: relative;
+}
+#testimonial .testimonial-bg-circle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+#testimonial .testimonial-slider .item .media {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 56px 40px;
+}
+#testimonial .testimonial-slider .item .media .img-container img {
+  height: 210px;
+  width: 200px;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#testimonial .testimonial-slider .item .media hr {
+  margin-right: auto;
+  border-top: 2px solid #A1A1AA;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 /* ====== Contact Section ======= */

@@ -41,7 +41,24 @@ h6, .h6{
     @extend .mb-16;
 }
 
-
+.text-styled{
+    position: relative;
+    z-index: 10;
+    display: inline;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 100%;
+        background-color: $primary-300;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(10%);
+        z-index: -1;
+    }
+}
 
 p{
     font-size: 1rem;
@@ -128,7 +145,6 @@ section{
         }
     }
 }
-
 
 
 /* ====== Banner Section ======= */
@@ -227,6 +243,41 @@ section{
     }
 }
 
+/* ====== Testimonial Section ======= */
+#testimonial{
+    overflow: hidden;
+    position: relative;
+    .testimonial-bg-circle{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+    .testimonial-slider{
+        .item{
+            .media{
+                border-radius: $radius-20+px;
+                box-shadow: $shadow-covered-md;
+                // padding: 72px 40px 56px 56px;
+                padding: 56px 40px;
+                .img-container{
+                    img{
+                        height: 210px;
+                        width: 200px;
+                        border-radius: $radius-15+px;
+                        object-fit: cover;
+                    }
+                }
+                hr{
+                    margin-right: auto;
+                    border-top: 2px solid $gray-3;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
 
 /* ====== Contact Section ======= */
 #contact {
