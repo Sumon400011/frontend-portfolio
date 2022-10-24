@@ -128,3 +128,48 @@
     @include border(2, solid, $secondary-color);
 }
 
+
+// ===== Inputs ===============
+@mixin input-field-properties{
+    font-size: $body-text;
+    width: 100%;
+    line-height: 150%;
+    border-radius: 4px;
+    border: 1px solid $gray-3;
+    color: $black-3;
+    &::placeholder{
+        color: $gray-3;
+    }
+    &:focus{
+        border: 1px solid $primary-color; 
+    }
+    &.success{
+        border: 1px solid $success-color;
+    }
+    &.warning{
+        border: 1px solid $warning-color;
+    }
+    &.danger{
+        border: 1px solid $danger-color;
+    }
+}
+
+@mixin input-label{
+    color: $gray-1;
+    line-height: 100%;
+    margin-bottom: 12px;
+}
+@mixin input-helper{
+    font-size: $body-text-sm;
+    line-height: 150%;
+    color: $black-3;
+    &.success{
+        color: $success-color;
+    }
+    &.warning{
+        color: $warning-color;
+    }
+    &.danger{
+        color: $danger-color;
+    }
+}
