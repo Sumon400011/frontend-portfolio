@@ -4993,6 +4993,106 @@ section {
   opacity: 0.7;
 }
 
+/* ====== skill Section ======= */
+#skill .card {
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+#skill .card .view {
+  color: #71717A;
+  min-height: 180px;
+  border-radius: 12px;
+  background-color: #E0F2C5;
+  -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#skill .card .view .fa-react,
+#skill .card .view .fa-brush,
+#skill .card .view .fa-shapes {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+#skill .card .view .fa-brush {
+  -webkit-animation-duration: 2.5s !important;
+          animation-duration: 2.5s !important;
+}
+#skill .card .card-body {
+  padding-top: 24px;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+#skill .card .card-body ul li {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #71717A;
+}
+#skill .card .card-body ul li::marker {
+  height: 10px;
+}
+#skill .card .card-footer {
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px;
+  background-color: #E0F2C5;
+  border-top: 0px;
+  padding: 0px;
+  height: 20px;
+}
+#skill .card:hover .fa-react {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-animation-name: spinner;
+          animation-name: spinner;
+}
+#skill .card:hover .fa-brush {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-animation-name: updown;
+          animation-name: updown;
+}
+#skill .card:hover .fa-shapes {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-animation: 4s ease 0.25s infinite normal both running wobble-hor-bottom;
+          animation: 4s ease 0.25s infinite normal both running wobble-hor-bottom;
+}
+
 /* ====== Portfolio Section ======= */
 #portfolio .media {
   -webkit-transition: 0.25s;
@@ -5117,6 +5217,108 @@ section {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+/* ==== updown ==== */
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/* ==== wobble-hor-bottom ==== */
+@-webkit-keyframes wobble-hor-bottom {
+  0%, 100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
   }
 }
 /* ======== Media Queries ======== */
@@ -5270,6 +5472,10 @@ section {
   #banner-section .container img.plus-primary-svg {
     top: 48%;
     left: 82%;
+  }
+  /* ====== skill ======= */
+  #skill .card .card-body {
+    width: calc(100% - 2rem);
   }
   /* ====== Footer ======= */
   #footer .footer-title {

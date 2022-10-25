@@ -264,6 +264,87 @@ section{
     }
 }
 
+/* ====== skill Section ======= */
+#skill{
+    .card{
+        border: none;
+        background-color: transparent;
+        height: 100%;
+        transition: 0.25s;
+        
+        .view{
+            color: $gray-2;
+            min-height: 180px;
+            border-radius: $radius-12 + px;
+            background-color: $primary-300;
+            box-shadow: $shadow-md;
+            z-index: 100;
+            padding: 24px;
+            text-align: center;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .fa-react, 
+            .fa-brush, 
+            .fa-shapes{
+                animation-duration: 4s;
+                animation-delay: 0.25s;
+                animation-iteration-count: infinite;
+                transform-origin: center center;
+                animation-timing-function: linear;
+                transition: 0.25s;
+            }
+            .fa-brush{
+                animation-duration: 2.5s!important;
+            }
+        }
+        .card-body{
+            padding-top: 24px;
+            width: calc(100% - 4rem);
+            margin: 0 auto;
+            background-color: $white-color;
+            box-shadow: $shadow-sm;
+            cursor: pointer;
+            
+            ul{
+                li{
+                    font-size: calc($body-text - 1) + px;
+                    margin-bottom: 8px;
+                    color: $gray-2;
+                    &::marker{
+                        height: 10px;
+                    }
+                }
+            }
+        }
+        .card-footer{
+            width: calc(100% - 4rem);
+            margin: 0 auto;
+            box-shadow: $shadow-sm;
+            border-radius: 0 0 8px 8px;
+            background-color: $primary-300;
+            border-top: 0px;
+            padding: 0px;
+            height: 20px;
+        }
+        &:hover .fa-react{
+            transition: 0.25s;
+            animation-name: spinner;
+        }
+        &:hover .fa-brush{
+            transition: 0.25s;
+            animation-name: updown;
+        }
+        &:hover .fa-shapes{
+            transition: 0.25s;
+            animation: 4s ease 0.25s infinite normal both running wobble-hor-bottom;
+        }
+    }
+}
+
 /* ====== Portfolio Section ======= */
 #portfolio{
     // background-image: linear-gradient(270deg, $primary-300,$secondary-100, $secondary-100);
@@ -395,6 +476,57 @@ section{
 }
 
 
+/* ==== updown ==== */
+@keyframes updown {
+    0%{
+       transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-10%);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(10%);
+    }
+    100%{
+       transform: translateY(0);
+    }
+}
+
+
+
+/* ==== wobble-hor-bottom ==== */
+@keyframes wobble-hor-bottom {
+    0%, 100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
 
 
 /* ======== Media Queries ======== */
@@ -603,6 +735,15 @@ section{
         }
     }
 
+    /* ====== skill ======= */
+    #skill{
+        .card{      
+            .card-body{
+                width: calc(100% - 2rem);
+            }
+        }
+    }
+
     /* ====== Footer ======= */
     #footer{
         .footer-title{
@@ -618,6 +759,7 @@ section{
         padding-left: $space-15 + px;
         padding-right: $space-15 + px;
     }
+    
 
     /* ====== Banner Section ======= */
     #banner-section{
