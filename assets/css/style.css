@@ -5180,10 +5180,6 @@ section {
     bottom: 80px;
     left: 98%;
   }
-  /* ====== Portfolio Section ======= */
-  #portfolio .media .media-text-module {
-    max-width: 320px;
-  }
   /* ====== Footer ======= */
   #footer .footer-title {
     font-size: 2.5rem;
