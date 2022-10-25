@@ -266,6 +266,26 @@ section{
 
 /* ====== skill Section ======= */
 #skill{
+    overflow: hidden;
+    position: relative;
+    .bg-img{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 50%);
+        .fa-react{
+            color: $secondary-300;
+            font-size: 55rem;
+            animation-duration: 20s;
+            animation-delay: 0.25s;
+            animation-iteration-count: infinite;
+            transform-origin: center center;
+            animation-timing-function: linear;
+            transition: 0.25s;
+            animation-name: spinner;
+        }
+    }
     .card{
         border: none;
         background-color: transparent;

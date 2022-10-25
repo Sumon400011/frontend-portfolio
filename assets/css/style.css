@@ -4994,6 +4994,36 @@ section {
 }
 
 /* ====== skill Section ======= */
+#skill {
+  overflow: hidden;
+  position: relative;
+}
+#skill .bg-img {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+#skill .bg-img .fa-react {
+  color: #FCE5D2;
+  font-size: 55rem;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-animation-name: spinner;
+          animation-name: spinner;
+}
 #skill .card {
   border: none;
   background-color: transparent;
