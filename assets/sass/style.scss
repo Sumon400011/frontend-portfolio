@@ -289,6 +289,7 @@ section{
         &:hover{
             box-shadow: $shadow-md;
             transition: 0.3s;
+            // background-color: $primary-300;
         }
         .icon-span{
             font-size: calc($heading-3 / $body-text)+rem;
@@ -604,4 +605,85 @@ section{
             }
         }
     }
+
+}
+
+
+@media (max-width: $breakpoint-575) {
+
+    /* ====== Testimonial Section ======= */
+    #testimonial{
+        overflow: hidden;
+        position: relative;
+        .testimonial-bg-circle{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+        .testimonial-slider{
+            .item{
+                .media{
+                    border-radius: $radius-20+px;
+                    box-shadow: $shadow-covered-md;
+                    padding: 40px 32px;
+                    .img-container{
+                        img{
+                            height: 150px;
+                            width: 150px;
+                            border-radius: $radius-15+px;
+                            object-fit: cover;
+                        }
+                    }
+                    // hr{
+                    //     margin-right: auto;
+                    //     border-top: 2px solid $gray-3;
+                    //     margin-top: 8px;
+                    //     margin-bottom: 8px;
+                    // }
+                }
+            }
+        }
+    }
+
+    /* ====== Testimonial Section ======= */
+    #testimonial{
+        overflow: hidden;
+        position: relative;
+        .testimonial-bg-circle{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+        .testimonial-slider{
+            .item{
+                .media{
+                    padding: 40px 32px;
+                    flex-direction: column;
+                    text-align: center;
+                    .img-container{
+                        img{
+                            height: 150px;
+                            width: 150px;
+                            margin-bottom: 16px;
+                        }
+                    }
+                    hr{
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* ====== Contact Section ======= */
+    #contact {
+        .media{
+            max-width: 100%;
+        }
+    }
+
 }
