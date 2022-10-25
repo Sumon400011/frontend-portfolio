@@ -4826,6 +4826,32 @@ p {
   background-color: #F2994A;
 }
 
+.secondary-link {
+  display: block;
+  color: #F2994A;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin-top: 16px;
+}
+.secondary-link:hover {
+  color: #F2994A;
+  text-decoration: underline;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.secondary-link .right-arrow {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin-left: 8px;
+}
+.secondary-link:hover .right-arrow {
+  padding-left: 10px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .spinner {
   -webkit-transform-origin: center center;
           transform-origin: center center;
@@ -4965,6 +4991,28 @@ section {
   bottom: 80px;
   left: 40%;
   opacity: 0.7;
+}
+
+/* ====== Portfolio Section ======= */
+#portfolio .media {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  background-color: #E0F2C5;
+  background-image: linear-gradient(135deg, #F3FAE8, #FEF5ED);
+  height: 100%;
+}
+#portfolio .media .media-text-module {
+  max-width: 238px;
+  width: 100%;
+}
+#portfolio .media:hover {
+  -webkit-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1) !important;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 /* ====== Testimonial Section ======= */
