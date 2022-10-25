@@ -311,6 +311,7 @@ section{
                         height: 210px;
                         width: 200px;
                         border-radius: $radius-15+px;
+                        box-shadow: $shadow-sm;
                         object-fit: cover;
                     }
                 }
@@ -475,6 +476,17 @@ section{
             
         }
     }
+
+    /* ====== Portfolio Section ======= */
+    #portfolio{
+        .media{
+            .media-text-module{
+                max-width: 320px;
+            }
+        }
+        
+    }
+
 
     /* ====== Footer ======= */
     #footer{
@@ -652,42 +664,40 @@ section{
         }
     }
 
+    /* ====== Portfolio Section ======= */
+    #portfolio{
+        .media{
+            .media-text-module{
+                max-width: 220px;
+                margin-left: 32px;
+                padding-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            .flex-grow-1{
+                margin-left: 8px;
+                
+            }
+        }
+    }
+
 }
 
 
 @media (max-width: $breakpoint-575) {
 
-    /* ====== Testimonial Section ======= */
-    #testimonial{
-        overflow: hidden;
-        position: relative;
-        .testimonial-bg-circle{
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translate(50%, -50%);
-        }
-        .testimonial-slider{
-            .item{
-                .media{
-                    border-radius: $radius-20+px;
-                    box-shadow: $shadow-covered-md;
-                    padding: 40px 32px;
-                    .img-container{
-                        img{
-                            height: 150px;
-                            width: 150px;
-                            border-radius: $radius-15+px;
-                            object-fit: cover;
-                        }
-                    }
-                    // hr{
-                    //     margin-right: auto;
-                    //     border-top: 2px solid $gray-3;
-                    //     margin-top: 8px;
-                    //     margin-bottom: 8px;
-                    // }
-                }
+    /* ====== Portfolio Section ======= */
+    #portfolio{
+        .media{
+            flex-direction: column;
+            .media-text-module{
+                width: auto;
+                max-width: 100%;
+                margin-left: 0px;
+                padding: 2rem;
+                margin-bottom: 0px;
+            }
+            .flex-grow-1{
+                margin-left: 0px;
             }
         }
     }
