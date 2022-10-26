@@ -5138,9 +5138,6 @@ section {
 }
 
 /* ====== Portfolio Section ======= */
-#education .tab-content .tab-pane {
-  min-height: 295px;
-}
 #education .tab-content .tab-pane .card {
   border-radius: 12px;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
