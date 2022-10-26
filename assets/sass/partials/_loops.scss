@@ -17,15 +17,15 @@
 
 /* ==== Gray Color Swatches ==== */
 @each $key, $gray in $grays {
-    .gray-#{$key} {color: $gray;}
+    .text-gray-#{$key} {color: $gray;}
     .bg-gray-#{$key} {background-color: $gray;}
 }
 
 
 /* ==== Black Color Swatches ==== */
-@each $key, $gray in $grays {
-    .text-gray-#{$key} {color: $gray;}
-    .bg-gray-#{$key} {background-color: $gray;}
+@each $key, $black in $blacks {
+    .text-black-#{$key} {color: $black;}
+    .bg-black-#{$key} {background-color: $black;}
 }
 
 

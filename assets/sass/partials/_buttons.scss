@@ -9,7 +9,13 @@
 .btn-right-icon, 
 .btn-left-icon, 
 .btn-right-icon-lg, 
-.btn-left-icon-lg{
+.btn-left-icon-lg,
+.button, 
+.button-lg, 
+.button-right-icon, 
+.button-left-icon, 
+.button-right-icon-lg, 
+.button-left-icon-lg{
     @include btn-properties;
     cursor: pointer;
     text-decoration: none;

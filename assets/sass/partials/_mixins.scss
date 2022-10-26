@@ -69,7 +69,7 @@
 // ===== Butons ===============
 @mixin btn-properties{
     font-size: calc($body-text / 16) + rem;
-    line-height: 1;
+    line-height: 100%;
     text-align: center;
     font-weight: $weight-semi-bold;
     vertical-align: middle;
