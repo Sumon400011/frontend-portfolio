@@ -404,6 +404,7 @@ section{
                     .right{
                         padding-top: 8px;
                         text-align: right;
+                        width: 111px;
                     }
                 }
             }
@@ -902,6 +903,33 @@ section{
             }
         }
     }
+
+    /* ====== education Section ======= */
+
+    #education{
+        .nav-pills{
+            justify-content: center;
+            button{
+                padding-left: calc($btn-p12 * 2) + px;
+                padding-right: calc($btn-p12 * 2) + px;
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                .row{
+                    .col-12{
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+
+    
 
     /* ====== Testimonial Section ======= */
     #testimonial{

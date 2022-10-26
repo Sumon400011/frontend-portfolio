@@ -5172,6 +5172,7 @@ section {
 #education .tab-content .experiences-content .card .header .right {
   padding-top: 8px;
   text-align: right;
+  width: 111px;
 }
 
 /* ====== Portfolio Section ======= */
@@ -5627,6 +5628,19 @@ section {
   }
   #portfolio .media .flex-grow-1 {
     margin-left: 0px;
+  }
+  /* ====== education Section ======= */
+  #education .nav-pills {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #education .nav-pills button {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #education .tab-content .tab-pane .row .col-12:last-child {
+    margin-bottom: 0px;
   }
   /* ====== Testimonial Section ======= */
   #testimonial {
