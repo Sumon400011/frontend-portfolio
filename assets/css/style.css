@@ -4487,6 +4487,13 @@
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
+.button-outline-primary.active,
+.btn-outline-primary.active {
+  color: #ffffff;
+  background-color: #84CC16;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
 
 .button-secondary,
 .btn-secondary {
@@ -4535,6 +4542,13 @@
 }
 .button-outline-secondary:hover,
 .btn-outline-secondary:hover {
+  color: #ffffff;
+  background-color: #F2994A;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.button-outline-secondary.active,
+.btn-outline-secondary.active {
   color: #ffffff;
   background-color: #F2994A;
   -webkit-transition: 0.25s all;
@@ -5121,6 +5135,43 @@ section {
   transition: 0.25s;
   -webkit-animation: 4s ease 0.25s infinite normal both running wobble-hor-bottom;
           animation: 4s ease 0.25s infinite normal both running wobble-hor-bottom;
+}
+
+/* ====== Portfolio Section ======= */
+#education .tab-content .tab-pane {
+  min-height: 295px;
+}
+#education .tab-content .tab-pane .card {
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+#education .tab-content .tab-pane .card .bg-circle {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(72%, -50%);
+          transform: translate(72%, -50%);
+  z-index: 1;
+}
+#education .tab-content .tab-pane .card .card-body {
+  z-index: 10;
+}
+#education .tab-content .tab-pane .card .card-body .school-name {
+  margin-bottom: 4px;
+}
+#education .tab-content .tab-pane .card .card-body .school-description {
+  max-width: 90%;
+  width: 100%;
+}
+#education .tab-content .experiences-content .card .header .right {
+  padding-top: 8px;
+  text-align: right;
 }
 
 /* ====== Portfolio Section ======= */

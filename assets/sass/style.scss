@@ -366,6 +366,53 @@ section{
 }
 
 /* ====== Portfolio Section ======= */
+#education{
+    .tab-content{
+        .tab-pane{
+            min-height: 295px;
+            .card{
+                border-radius: $radius-12 + px;
+                box-shadow: $shadow-covered-sm;
+                border: none;
+                position: relative;
+                overflow: hidden;
+                height: 100%;
+                .bg-circle{
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(72%, -50%);
+                    z-index: 1;
+                    
+                }
+                .card-body{
+                    z-index: 10;
+                    .school-name{
+                        margin-bottom: 4px;
+                    }
+                    .school-description{
+                        max-width: 90%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .experiences-content{
+            .card{
+                .header{
+                    .right{
+                        padding-top: 8px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ====== Portfolio Section ======= */
 #portfolio{
     // background-image: linear-gradient(270deg, $primary-300,$secondary-100, $secondary-100);
     .media{

@@ -76,8 +76,13 @@
     @include btn-outline-primary;
     @include border-radius(8, 8, 8, 8);
     transition: 0.25s all;
-
+    
     &:hover{
+        color: $white-color;
+        background-color: $primary-color;
+        transition: 0.25s all;
+    }
+    &.active{
         color: $white-color;
         background-color: $primary-color;
         transition: 0.25s all;
@@ -122,6 +127,11 @@
     transition: 0.25s all;
 
     &:hover{
+        color: $white-color;
+        background-color: $secondary-color;
+        transition: 0.25s all;
+    }
+    &.active{
         color: $white-color;
         background-color: $secondary-color;
         transition: 0.25s all;
