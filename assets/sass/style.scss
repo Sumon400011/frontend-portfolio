@@ -181,6 +181,19 @@ section{
         .objective{
             max-width: 600px;
         }
+
+        .my-interest,
+        .my-journey{
+            .media-container{
+                max-width: 320px;
+            }
+            .icon-span{
+                height: 40px;
+                width: 40px;
+                border: 1px dotted $gray-1;
+                font-size: $body-text-md + px;
+            }
+        }
     }
 }
 

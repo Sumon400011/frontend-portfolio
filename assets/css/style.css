@@ -4922,6 +4922,17 @@ section {
 #about .row .objective {
   max-width: 600px;
 }
+#about .row .my-interest .media-container,
+#about .row .my-journey .media-container {
+  max-width: 320px;
+}
+#about .row .my-interest .icon-span,
+#about .row .my-journey .icon-span {
+  height: 40px;
+  width: 40px;
+  border: 1px dotted #52525B;
+  font-size: 18px;
+}
 
 /* ====== Banner Section ======= */
 #banner-section {
