@@ -778,6 +778,12 @@ section {
     width: 95%;
     left: 2%;
   }
+  #skill .card .card-body {
+    width: calc(100% - 1rem);
+  }
+  #skill .card .card-footer {
+    width: calc(100% - 1rem);
+  }
 }
 @media (max-width: 991px) {
   /* ====== Menu | Navbar ======= */
@@ -838,6 +844,9 @@ section {
   }
   /* ====== skill ======= */
   #skill .card .card-body {
+    width: calc(100% - 2rem);
+  }
+  #skill .card .card-footer {
     width: calc(100% - 2rem);
   }
   /* ====== Footer ======= */

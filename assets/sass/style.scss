@@ -792,6 +792,17 @@ section{
             }
         }
     }
+
+    #skill{
+        .card{
+            .card-body{
+                width: calc(100% - 1rem);
+            }
+            .card-footer{
+                width: calc(100% - 1rem);
+            }
+        }
+    }
 }
 
 
@@ -870,6 +881,9 @@ section{
     #skill{
         .card{      
             .card-body{
+                width: calc(100% - 2rem);
+            }
+            .card-footer{
                 width: calc(100% - 2rem);
             }
         }
