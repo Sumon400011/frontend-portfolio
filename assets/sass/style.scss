@@ -285,7 +285,6 @@ section{
 
 /* ====== About Section ======= */
 #about{
-    padding-top: 184px;
     .row{
         .about-me-img{
             max-width: 460px;
@@ -926,6 +925,17 @@ section{
                     top: 48%;
                     left: 82%;
                 }
+            }
+        }
+    }
+
+    #about{
+        .row{
+            .download-btn{
+                display: none;
+            }
+            .objective{
+                max-width: 100%;
             }
         }
     }

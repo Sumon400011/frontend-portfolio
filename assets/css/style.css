@@ -260,9 +260,6 @@ section {
 
 /* ====== company Section ======= */
 /* ====== About Section ======= */
-#about {
-  padding-top: 184px;
-}
 #about .row .about-me-img {
   max-width: 460px;
   width: 100%;
@@ -883,6 +880,12 @@ section {
   #banner-section .container img.plus-primary-svg {
     top: 48%;
     left: 82%;
+  }
+  #about .row .download-btn {
+    display: none;
+  }
+  #about .row .objective {
+    max-width: 100%;
   }
   /* ====== Portfolio Section ======= */
   #portfolio .media .media-text-module {
