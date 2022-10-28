@@ -1,9 +1,5 @@
 @import "partials/_variables";
 @import "partials/_mixins";
-@import "partials/_loops";
-@import "partials/_buttons";
-@import "partials/_typography";
-@import "partials/_input";
 
 html, body{
     font-family: $font-family !important;
@@ -167,62 +163,15 @@ section{
     }
 }
 
-/* ====== company Section ======= */
-// #company{
-//     max-width: 80%;
-//     width: 100%;
-//     background-color: $white-color;
-//     z-index: 500;
-
-//     .image-container{
-//         width: 100%;
-
-//         .logo{
-//             max-width: 160px;
-//             width: 100%;
-//             height: auto;
-//         }
-//     }
-    
-// }
-
-
-/* ====== About Section ======= */
-#about{
-    padding-top: 184px;
-    .row{
-        .about-me-img{
-            max-width: 460px;
-            width: 100%;
-            margin: 0 auto;
-            display: block;
-        }
-
-        .objective{
-            max-width: 600px;
-        }
-
-        .my-interest,
-        .my-journey{
-            .media-container{
-                max-width: 320px;
-            }
-            .icon-span{
-                height: 40px;
-                width: 40px;
-                border: 1px dotted $gray-1;
-                font-size: $body-text-md + px;
-            }
-        }
-    }
-}
-
 /* ====== Banner Section ======= */
 #banner-section{
     overflow: hidden;
     .container{
         
         .row{
+            min-height: 650px;
+            // min-height: 100vh;
+            // max-height: 1080px;
             .text-module{
                 z-index: 3;
             }
@@ -312,6 +261,58 @@ section{
         }
     }
 }
+
+
+/* ====== company Section ======= */
+// #company{
+//     max-width: 80%;
+//     width: 100%;
+//     background-color: $white-color;
+//     z-index: 500;
+
+//     .image-container{
+//         width: 100%;
+
+//         .logo{
+//             max-width: 160px;
+//             width: 100%;
+//             height: auto;
+//         }
+//     }
+    
+// }
+
+
+/* ====== About Section ======= */
+#about{
+    padding-top: 184px;
+    .row{
+        .about-me-img{
+            max-width: 460px;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .objective{
+            max-width: 600px;
+        }
+
+        .my-interest,
+        .my-journey{
+            .media-container{
+                max-width: 320px;
+            }
+            .icon-span{
+                height: 40px;
+                width: 40px;
+                border: 1px dotted $gray-1;
+                font-size: $body-text-md + px;
+            }
+        }
+    }
+}
+
 
 /* ====== skill Section ======= */
 #skill{
@@ -484,8 +485,6 @@ section{
     }
     
 }
-
-
 
 /* ====== Testimonial Section ======= */
 #testimonial{
@@ -661,6 +660,23 @@ section{
     }
 
 }
+@media (min-width: ($breakpoint-1440 + 1) ) {
+    #banner-section{
+        .container{
+            .row{
+                min-height: 800px!important;
+                .banner-img{
+                    // max-width: 55vh;
+                    max-width: 450px;
+                }
+                .circle-svg{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: ($breakpoint-1440) ) {
     section{
@@ -764,7 +780,7 @@ section{
         .container{
             .row{
                 .banner-img{
-                    max-width: 420px;
+                    max-width: 380px;
                 }
                 .description{
                     max-width: 465px;
@@ -815,7 +831,6 @@ section{
     /* ====== Banner Section ======= */
     #banner-section{
         padding-top: 120px;
-        padding-bottom: 120px;
         .container{
             .row{
                 height: auto !important;
@@ -935,6 +950,16 @@ section{
 
 
 @media (max-width: $breakpoint-575) {
+    /* ====== Banner ======= */
+    #banner-section{
+        .container{
+            .row{
+                .circle-svg{
+                    display: none;
+                }
+            }
+        }
+    }
 
     /* ====== Portfolio Section ======= */
     #portfolio{
