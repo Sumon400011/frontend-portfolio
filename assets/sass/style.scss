@@ -547,6 +547,28 @@ section{
 //     @include border-radius($radius-25, $radius-25, 0, 0);
 // }
 
+/* ====== Footer ======= */
+#footer{
+    .footer-title{
+        font-size: calc($heading-3 / $body-text)+rem;
+    }
+    .footer-links-module{
+        .nav-link{
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    .footer-social-links-module{
+        .nav-link{
+            font-size: 1.2rem;
+            padding: 8px;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+}
 
 /* ======== Animations Keyframes ======== */
 @keyframes CircleScaling {
@@ -744,28 +766,7 @@ section{
     
 
 
-    /* ====== Footer ======= */
-    #footer{
-        .footer-title{
-            font-size: calc($heading-3 / $body-text)+rem;
-        }
-        .footer-links-module{
-            .nav-link{
-                &:hover{
-                    color: $primary-color;
-                }
-            }
-        }
-        .footer-social-links-module{
-            .nav-link{
-                font-size: 1.2rem;
-                padding: 8px;
-                &:hover{
-                    color: $primary-color;
-                }
-            }
-        }
-    }
+    
 }
 
 @media (max-width: $breakpoint-1024) {

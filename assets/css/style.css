@@ -522,6 +522,21 @@ section {
 }
 
 /* ====== Footer Section ======= */
+/* ====== Footer ======= */
+#footer .footer-title {
+  font-size: 2.5rem;
+}
+#footer .footer-links-module .nav-link:hover {
+  color: #84CC16;
+}
+#footer .footer-social-links-module .nav-link {
+  font-size: 1.2rem;
+  padding: 8px;
+}
+#footer .footer-social-links-module .nav-link:hover {
+  color: #84CC16;
+}
+
 /* ======== Animations Keyframes ======== */
 @keyframes CircleScaling {
   from {
@@ -745,20 +760,6 @@ section {
     max-width: 40px;
     bottom: 80px;
     left: 98%;
-  }
-  /* ====== Footer ======= */
-  #footer .footer-title {
-    font-size: 2.5rem;
-  }
-  #footer .footer-links-module .nav-link:hover {
-    color: #84CC16;
-  }
-  #footer .footer-social-links-module .nav-link {
-    font-size: 1.2rem;
-    padding: 8px;
-  }
-  #footer .footer-social-links-module .nav-link:hover {
-    color: #84CC16;
   }
 }
 @media (max-width: 1024px) {
