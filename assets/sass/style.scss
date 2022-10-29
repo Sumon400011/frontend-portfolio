@@ -961,6 +961,12 @@ section{
         }
     }
 
+    #contact {
+        .media{
+            max-width: 100%;
+        }
+    }
+
     /* ====== Portfolio Section ======= */
     #portfolio{
         .media{
@@ -1034,17 +1040,10 @@ section{
     }
     
 
-    
-
     /* ====== Testimonial Section ======= */
     #testimonial{
-        overflow: hidden;
-        position: relative;
         .testimonial-bg-circle{
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translate(50%, -50%);
+            transform: translate(70%, -50%);
         }
         .testimonial-slider{
             .item{

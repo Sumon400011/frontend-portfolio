@@ -901,6 +901,9 @@ section {
   #about .row .objective {
     max-width: 100%;
   }
+  #contact .media {
+    max-width: 100%;
+  }
   /* ====== Portfolio Section ======= */
   #portfolio .media .media-text-module {
     max-width: 220px;
@@ -948,16 +951,9 @@ section {
     margin-bottom: 0px;
   }
   /* ====== Testimonial Section ======= */
-  #testimonial {
-    overflow: hidden;
-    position: relative;
-  }
   #testimonial .testimonial-bg-circle {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    -webkit-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
+    -webkit-transform: translate(70%, -50%);
+            transform: translate(70%, -50%);
   }
   #testimonial .testimonial-slider .item .media {
     padding: 40px 32px;
