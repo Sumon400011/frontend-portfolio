@@ -849,6 +849,11 @@ section {
   #skill .card .card-footer {
     width: calc(100% - 2rem);
   }
+  /* ====== Testimonial Section ======= */
+  #testimonial .testimonial-bg-circle {
+    -webkit-transform: translate(70%, -50%);
+            transform: translate(70%, -50%);
+  }
   /* ====== Footer ======= */
   #footer .footer-title {
     font-size: 2rem;
