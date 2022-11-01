@@ -399,18 +399,30 @@ section{
             padding: 0px;
             height: 20px;
         }
-        &:hover .fa-react{
+        .fa-react{
             transition: 0.25s;
             animation-name: spinner;
         }
-        &:hover .fa-brush{
+        // &:hover .fa-react{
+        //     transition: 0.25s;
+        //     animation-name: spinner;
+        // }
+        .fa-brush{
             transition: 0.25s;
             animation-name: updown;
         }
-        &:hover .fa-shapes{
+        // &:hover .fa-brush{
+        //     transition: 0.25s;
+        //     animation-name: updown;
+        // }
+        .fa-shapes{
             transition: 0.25s;
-            animation: 4s ease 0.25s infinite normal both running wobble-hor-bottom;
+            animation: 6s ease 0.25s infinite normal both running wobble-hor-bottom;
         }
+        // &:hover .fa-shapes{
+        //     transition: 0.25s;
+        //     animation: 4s ease 0.25s infinite normal both running wobble-hor-bottom;
+        // }
     }
 }
 
@@ -651,15 +663,15 @@ section{
         -webkit-transform: translateX(15px) rotate(6deg);
         transform: translateX(15px) rotate(6deg);
     }
-    45% {
+    50% {
         -webkit-transform: translateX(-15px) rotate(-3.6deg);
         transform: translateX(-15px) rotate(-3.6deg);
     }
-    60% {
+    70% {
         -webkit-transform: translateX(9px) rotate(2.4deg);
         transform: translateX(9px) rotate(2.4deg);
     }
-    75% {
+    85% {
         -webkit-transform: translateX(-6px) rotate(-1.2deg);
         transform: translateX(-6px) rotate(-1.2deg);
     }

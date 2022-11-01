@@ -392,23 +392,23 @@ section {
   padding: 0px;
   height: 20px;
 }
-#skill .card:hover .fa-react {
+#skill .card .fa-react {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   -webkit-animation-name: spinner;
           animation-name: spinner;
 }
-#skill .card:hover .fa-brush {
+#skill .card .fa-brush {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   -webkit-animation-name: updown;
           animation-name: updown;
 }
-#skill .card:hover .fa-shapes {
+#skill .card .fa-shapes {
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  -webkit-animation: 4s ease 0.25s infinite normal both running wobble-hor-bottom;
-          animation: 4s ease 0.25s infinite normal both running wobble-hor-bottom;
+  -webkit-animation: 6s ease 0.25s infinite normal both running wobble-hor-bottom;
+          animation: 6s ease 0.25s infinite normal both running wobble-hor-bottom;
 }
 
 /* ====== Portfolio Section ======= */
@@ -648,15 +648,15 @@ section {
     -webkit-transform: translateX(15px) rotate(6deg);
     transform: translateX(15px) rotate(6deg);
   }
-  45% {
+  50% {
     -webkit-transform: translateX(-15px) rotate(-3.6deg);
     transform: translateX(-15px) rotate(-3.6deg);
   }
-  60% {
+  70% {
     -webkit-transform: translateX(9px) rotate(2.4deg);
     transform: translateX(9px) rotate(2.4deg);
   }
-  75% {
+  85% {
     -webkit-transform: translateX(-6px) rotate(-1.2deg);
     transform: translateX(-6px) rotate(-1.2deg);
   }
@@ -676,15 +676,15 @@ section {
     -webkit-transform: translateX(15px) rotate(6deg);
     transform: translateX(15px) rotate(6deg);
   }
-  45% {
+  50% {
     -webkit-transform: translateX(-15px) rotate(-3.6deg);
     transform: translateX(-15px) rotate(-3.6deg);
   }
-  60% {
+  70% {
     -webkit-transform: translateX(9px) rotate(2.4deg);
     transform: translateX(9px) rotate(2.4deg);
   }
-  75% {
+  85% {
     -webkit-transform: translateX(-6px) rotate(-1.2deg);
     transform: translateX(-6px) rotate(-1.2deg);
   }
