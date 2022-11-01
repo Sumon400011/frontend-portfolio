@@ -540,6 +540,7 @@ section{
         border-radius: 8px;
         max-width: 382px;
         transition: 0.3s;
+        border: 2px solid $primary-color;
         cursor: pointer;
         &:hover{
             box-shadow: $shadow-md;
