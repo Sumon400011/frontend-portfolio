@@ -167,10 +167,6 @@ p {
 #menu nav .sidebar {
   display: none;
 }
-main {
-  overflow: hidden;
-  position: relative;
-}
 main .body-bg-dotted-1 {
   position: absolute;
   content: "";
