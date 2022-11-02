@@ -121,7 +121,7 @@ p {
           animation: spinner 2s linear infinite;
 }
 
-section {
+.section, section {
   width: 100%;
   max-width: 100%;
   padding-left: 45px;
@@ -692,7 +692,7 @@ section {
 }
 /* ======== Media Queries ======== */
 @media (min-width: 1025px) {
-  section {
+  .section, section {
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -713,7 +713,7 @@ section {
   }
 }
 @media (max-width: 1440px) {
-  section {
+  .section, section {
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -764,7 +764,7 @@ section {
   }
 }
 @media (max-width: 1024px) {
-  section {
+  .section, section {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -808,7 +808,7 @@ section {
   }
   .sidebar .offcanvas-header,
 .sidebar .offcanvas-body,
-section {
+.section, section {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -864,7 +864,7 @@ section {
 @media (max-width: 768px) {
   .sidebar .offcanvas-header,
 .sidebar .offcanvas-body,
-section {
+.section, section {
     padding-left: 15px;
     padding-right: 15px;
   }

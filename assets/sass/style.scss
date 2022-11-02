@@ -105,7 +105,7 @@ p{
 }
 
 
-section{
+.section, section{
     width: 100%;
     max-width: 100%;
     padding-left: $space-45+px;
@@ -681,7 +681,7 @@ section{
 
 /* ======== Media Queries ======== */
 @media (min-width: ($breakpoint-1024 + 1) ) {
-    section{
+    .section, section{
         padding-left: $space-45 + px;
         padding-right: $space-45 + px;
     }
@@ -713,7 +713,7 @@ section{
 
 
 @media (max-width: ($breakpoint-1440) ) {
-    section{
+    .section, section{
         padding-left: $space-45 + px;
         padding-right: $space-45 + px;
     }
@@ -783,7 +783,7 @@ section{
 }
 
 @media (max-width: $breakpoint-1024) {
-    section{
+    .section, section{
         padding-left: $space-32 + px;
         padding-right: $space-32 + px;
     }
@@ -848,7 +848,7 @@ section{
 
     .sidebar .offcanvas-header,
     .sidebar .offcanvas-body,
-    section{
+    .section, section{
         padding-left: $space-32 + px;
         padding-right: $space-32 + px;
     }
@@ -921,7 +921,7 @@ section{
 @media (max-width: $breakpoint-768) {
     .sidebar .offcanvas-header,
     .sidebar .offcanvas-body,
-    section{
+    .section, section{
         padding-left: $space-15 + px;
         padding-right: $space-15 + px;
     }

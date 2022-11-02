@@ -28,84 +28,36 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body id="body">
+    <!-- ===== Menu ===== -->
+    <div class="fixed-top section" id="menu">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand weight-semi-bold" href="#">Logo</a>
+          <!-- offcanvas button -->
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <span class="fa-solid fa-bars"></span>
+          </button>
 
-    
-      <!-- ===== Menu ===== -->
-      <section class="fixed-top" id="menu">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <a class="navbar-brand weight-semi-bold" href="#">Logo</a>
-            <!-- offcanvas button -->
-            <button
-              class="navbar-toggler"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-            >
-              <span class="fa-solid fa-bars"></span>
-            </button>
-
-            <!-- offcanvas Body -->
-            <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasRight" data-bs-scroll="true" aria-labelledby="offcanvasRightLabel">
-              <!-- offcanvas header -->
-              <div class="offcanvas-header bg-secondary-300 py-8">
-                <a class="navbar-brand weight-semi-bold" href="#" id="offcanvasRightLabel">Logo</a>
-                <button type="button" class="btn-close px-12 me-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-
-              <!-- offcanvas body -->
-              <div class="offcanvas-body">
-                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#body">Intro</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About Me</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#skill">Skills</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolios</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#testimonial">Testimonials</a>
-                  </li>
-    
-                  <li class="nav-item">
-                    <a class="nav-link me-0" href="#contact">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <!-- <a class="btn-right-icon btn-outline-primary" href="#">Download CV</a> -->
-                    <button
-                      class="btn-right-icon btn-outline-primary mt-32 mb-8 mx-12"
-                      href="#"
-                    >
-                      Download CV
-                      <span class="icon ml-8">
-                        <i class="fa-solid fa-download"></i>
-                      </span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+          <!-- offcanvas Body -->
+          <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasRight" data-bs-scroll="true" aria-labelledby="offcanvasRightLabel">
+            <!-- offcanvas header -->
+            <div class="offcanvas-header bg-secondary-300 py-8">
+              <a class="navbar-brand weight-semi-bold" href="#" id="offcanvasRightLabel">Logo</a>
+              <button type="button" class="btn-close px-12 me-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            
-            <!-- navbar items -->
-            <div class="collapse navbar-collapse" id="navbarContent">
+
+            <!-- offcanvas body -->
+            <div class="offcanvas-body">
               <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#intro">Intro</a>
+                  <a class="nav-link active" aria-current="page" href="#body">Intro</a>
                 </li>
-
+  
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About Me</a>
                 </li>
@@ -116,7 +68,8 @@
 
                 <li class="nav-item">
                   <a class="nav-link" href="#skill">Skills</a>
-
+                </li>
+  
                 <li class="nav-item">
                   <a class="nav-link" href="#portfolio">Portfolios</a>
                 </li>
@@ -124,27 +77,72 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#testimonial">Testimonials</a>
                 </li>
-
+  
                 <li class="nav-item">
                   <a class="nav-link me-0" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
                   <!-- <a class="btn-right-icon btn-outline-primary" href="#">Download CV</a> -->
-                  <button
-                    class="btn-right-icon btn-outline-primary ml-40"
+                  <a
+                    class="btn-right-icon btn-outline-primary mt-32 mb-8 mx-12"
                     href="#"
                   >
                     Download CV
                     <span class="icon ml-8">
                       <i class="fa-solid fa-download"></i>
                     </span>
-                  </button>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
-      </section>
+          
+          <!-- navbar items -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#intro">Intro</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#skill">Skills</a>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolios</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonials</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link me-0" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="btn-right-icon btn-outline-primary" href="#">Download CV</a> -->
+                <button
+                  class="btn-right-icon btn-outline-primary ml-40"
+                  href="#"
+                >
+                  Download CV
+                  <span class="icon ml-8">
+                    <i class="fa-solid fa-download"></i>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
       
     <main data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="0" tabindex="0">
@@ -162,9 +160,11 @@
                 <p class="text-gray-2 weight-semi-bold text-lg description mb-0">
                   An enthusiastic frontend web developer, having expertise in web development. I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
                 </p>
-                <button class="button button-primary mt-40">
+                <a 
+                  href="#portfolio"
+                  class="button button-primary mt-40">
                   See Portfolios
-                </button>
+                </a>
               </div>
             </div>
             <div
@@ -361,11 +361,17 @@
 
                   <div class="row">
                     <div class="col-12">
-                      <button class="button button-primary">See Portfolios</button>
-                      <button class="btn-right-icon btn-outline-primary ml-24 ml-sm-32 download-btn">
+                      <a 
+                        href="#portfolio"
+                        class="button button-primary">
+                          See Portfolios
+                    </a>
+                      <a 
+                        href="#"
+                        class="btn-right-icon btn-outline-primary ml-24 ml-sm-32 download-btn">
                         Download CV
                         <span class="icon ml-8"><i class="fa-solid fa-download"></i></span>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

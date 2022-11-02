@@ -2,8 +2,35 @@
 @import "_mixins";
 
 /* ====== Buttons ====== */
+a.btn, 
+a.btn-lg, 
+a.btn-right-icon, 
+a.btn-left-icon, 
+a.btn-right-icon-lg, 
+a.btn-left-icon-lg,
+a.button, 
+a.button-lg, 
+a.button-right-icon, 
+a.button-left-icon, 
+a.button-right-icon-lg, 
+a.button-left-icon-lg{
+    display: inline-block;
+
+}
 
 // default btn
+a.btn, 
+a.btn-lg, 
+a.btn-right-icon, 
+a.btn-left-icon, 
+a.btn-right-icon-lg, 
+a.btn-left-icon-lg,
+a.button, 
+a.button-lg, 
+a.button-right-icon, 
+a.button-left-icon, 
+a.button-right-icon-lg, 
+a.button-left-icon-lg,
 .btn, 
 .btn-lg, 
 .btn-right-icon, 
@@ -20,6 +47,7 @@
     cursor: pointer;
     text-decoration: none;
 }
+
 
 .button,
 .btn{
@@ -48,6 +76,8 @@
 }
 
 // primary btn
+a.button-primary,
+a.btn-primary,
 .button-primary,
 .btn-primary{
     @include btn-primary;
@@ -77,6 +107,8 @@
 }
 
 // primary Outline btn
+a.button-outline-primary,
+a.btn-outline-primary,
 .button-outline-primary,
 .btn-outline-primary{
     @include btn-outline-primary;
@@ -97,6 +129,8 @@
 
 
 // Secondary btn
+a.button-secondary,
+a.btn-secondary,
 .button-secondary,
 .btn-secondary{
     @include btn-secondary;
@@ -126,6 +160,8 @@
 }
 
 // Secondary Outline btn
+a.button-outline-secondary,
+a.btn-outline-secondary,
 .button-outline-secondary,
 .btn-outline-secondary{
     @include btn-outline-secondary;
