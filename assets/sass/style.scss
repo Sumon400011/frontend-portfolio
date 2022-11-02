@@ -164,7 +164,7 @@ section{
 }
 
 /* ====== Banner Section ======= */
-#banner-section{
+#intro{
     overflow: hidden;
     .container{
         
@@ -695,7 +695,7 @@ section{
 
 }
 @media (min-width: ($breakpoint-1440 + 1) ) {
-    #banner-section{
+    #intro{
         .container{
             .row{
                 min-height: 800px!important;
@@ -725,7 +725,7 @@ section{
     }
 
     /* ====== Banner Section ======= */
-    #banner-section{
+    #intro{
         .container{
             .row{
                 .banner-img{
@@ -789,7 +789,7 @@ section{
     }
 
     /* ====== Banner Section ======= */
-    #banner-section{
+    #intro{
         .container{
             .row{
                 .banner-img{
@@ -853,7 +853,7 @@ section{
         padding-right: $space-32 + px;
     }
     /* ====== Banner Section ======= */
-    #banner-section{
+    #intro{
         padding-top: 120px;
         .container{
             .row{
@@ -928,7 +928,7 @@ section{
     
 
     /* ====== Banner Section ======= */
-    #banner-section{
+    #intro{
         .container{
             .row{
                 height: auto !important;
@@ -1002,7 +1002,7 @@ section{
 
 @media (max-width: $breakpoint-575) {
     /* ====== Banner ======= */
-    #banner-section{
+    #intro{
         .container{
             .row{
                 .circle-svg{

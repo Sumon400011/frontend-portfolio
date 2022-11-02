@@ -28,51 +28,110 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body id="body">
-    <!-- ===== Menu ===== -->
-    <section class="fixed-top" id="menu">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand weight-semi-bold" href="#">Logo</a>
-          <!-- offcanvas button -->
-          <button
-            class="navbar-toggler"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <span class="fa-solid fa-bars"></span>
-          </button>
 
-          <!-- offcanvas Body -->
-          <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasRight" data-bs-scroll="true" aria-labelledby="offcanvasRightLabel">
-            <!-- offcanvas header -->
-            <div class="offcanvas-header bg-secondary-300 py-8">
-              <a class="navbar-brand weight-semi-bold" href="#" id="offcanvasRightLabel">Logo</a>
-              <button type="button" class="btn-close px-12 me-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+      <!-- ===== Menu ===== -->
+      <section class="fixed-top" id="menu">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand weight-semi-bold" href="#">Logo</a>
+            <!-- offcanvas button -->
+            <button
+              class="navbar-toggler"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <span class="fa-solid fa-bars"></span>
+            </button>
+
+            <!-- offcanvas Body -->
+            <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasRight" data-bs-scroll="true" aria-labelledby="offcanvasRightLabel">
+              <!-- offcanvas header -->
+              <div class="offcanvas-header bg-secondary-300 py-8">
+                <a class="navbar-brand weight-semi-bold" href="#" id="offcanvasRightLabel">Logo</a>
+                <button type="button" class="btn-close px-12 me-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <!-- offcanvas body -->
+              <div class="offcanvas-body">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#body">Intro</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skill">Skills</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolios</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Testimonials</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link me-0" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <!-- <a class="btn-right-icon btn-outline-primary" href="#">Download CV</a> -->
+                    <button
+                      class="btn-right-icon btn-outline-primary mt-32 mb-8 mx-12"
+                      href="#"
+                    >
+                      Download CV
+                      <span class="icon ml-8">
+                        <i class="fa-solid fa-download"></i>
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <!-- offcanvas body -->
-            <div class="offcanvas-body">
+            
+            <!-- navbar items -->
+            <div class="collapse navbar-collapse" id="navbarContent">
               <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#body">Intro</a>
+                  <a class="nav-link active" aria-current="page" href="#intro">Intro</a>
                 </li>
-  
+
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About Me</a>
                 </li>
-  
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#education">Education</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#skill">Skills</a>
+
                 <li class="nav-item">
                   <a class="nav-link" href="#portfolio">Portfolios</a>
                 </li>
-  
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonial">Testimonials</a>
+                </li>
+
                 <li class="nav-item">
                   <a class="nav-link me-0" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
                   <!-- <a class="btn-right-icon btn-outline-primary" href="#">Download CV</a> -->
                   <button
-                    class="btn-right-icon btn-outline-primary mt-32 mb-8 mx-12"
+                    class="btn-right-icon btn-outline-primary ml-40"
                     href="#"
                   >
                     Download CV
@@ -84,920 +143,888 @@
               </ul>
             </div>
           </div>
-          
-          <!-- navbar items -->
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#intro">Intro</a>
-              </li>
+        </nav>
+      </section>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Me</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolios</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link me-0" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="btn-right-icon btn-outline-primary" href="#">Download CV</a> -->
-                <button
-                  class="btn-right-icon btn-outline-primary ml-40"
-                  href="#"
-                >
-                  Download CV
-                  <span class="icon ml-8">
-                    <i class="fa-solid fa-download"></i>
-                  </span>
+      
+    <main data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="0" tabindex="0">
+      <!-- ===== Banner section ===== -->
+      <section class="bg-primary-100" id="intro">
+        <div class="container position-relative">
+          <div class="row d-flex align-items-stretch">
+            <div
+              class="col-xxl-5 col-xl-6 col-lg-6 col-md-12 d-flex align-items-center"
+            >
+              <div class="w-100 text-module">
+                <h5 class="gray-3 h4 weight-semi-bold">Hello, I am</h5>
+                <h1 class="display-1 mb-8">Sumon Mondol</h1>
+                <h4 class="h4 text-secondary">Frontend Web Developer</h4>
+                <p class="text-gray-2 weight-semi-bold text-lg description mb-0">
+                  An enthusiastic frontend web developer, having expertise in web development. I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
+                </p>
+                <button class="button button-primary mt-40">
+                  See Portfolios
                 </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
-
-    
-
-    <!-- ===== Banner section ===== -->
-    <section class="bg-primary-100" id="banner-section">
-      <div class="container position-relative">
-        <div class="row d-flex align-items-stretch">
-          <div
-            class="col-xxl-5 col-xl-6 col-lg-6 col-md-12 d-flex align-items-center"
-          >
-            <div class="w-100 text-module">
-              <h5 class="gray-3 h4 weight-semi-bold">Hello, I am</h5>
-              <h1 class="display-1 mb-8">Sumon Mondol</h1>
-              <h4 class="h4 text-secondary">Frontend Web Developer</h4>
-              <p class="text-gray-2 weight-semi-bold text-lg description mb-0">
-                An enthusiastic frontend web developer, having expertise in web development. I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
-              </p>
-              <button class="button button-primary mt-40">
-                See Portfolios
-              </button>
-            </div>
-          </div>
-          <div
-            class="col-xxl-5 col-xl-5 col-lg-6 col-md-12 offset-xxl-1 offset-xl-0 offset-lg-0 d-flex align-items-end position-relative justify-content-center"
-          >
-            <img
-              src="assets/img/person.png"
-              alt="person"
-              class="mx-auto d-block img-fluid banner-img"
-            />
-            <img
-              src="assets/img/banner-big-circle.svg"
-              alt="banner-big-circle"
-              class="position-absolute bottom-0 circle-svg"
-            />
-          </div>
-        </div>
-        <!-- svg bg styles -->
-        <!-- <img src="assets/img/dotted-secondary.svg" alt="dotted-bg" class=" dotted-svg" /> -->
-
-        <!-- <img src="assets/img/dotted-secondary.svg" alt="dotted-bg" class=" dotted-secondary-svg2" /> -->
-
-        <!-- <img src="assets/img/dotted-primary.svg" alt="dotted-primary-bg" class=" dotted-primary-svg" /> -->
-
-        <img
-          src="assets/img/plus-secondary-500.svg"
-          alt="plus seconday spinner"
-          class="plus-secondary-svg spinner"
-        />
-
-        <img
-          src="assets/img/plus-primary.svg"
-          alt="plus primary spinner"
-          class="plus-primary-svg spinner"
-        />
-
-        <!-- <img src="assets/img/circle-primary-sm.svg" alt="circle primary" class=" circle-primary-sm-svg" /> -->
-
-        <img
-          src="assets/img/circle-outline-secondary.svg"
-          alt="circle outline"
-          class="circle-outline-secondary-svg"
-        />
-
-        <img
-          src="assets/img/circle-outline-secondary.svg"
-          alt="circle outline"
-          class="circle-outline-secondary-svg2"
-        />
-
-        <img
-          src="assets/img/rect-outline-secondary.svg"
-          alt="rect outline"
-          class="rect-outline-secondary-svg spinner"
-        />
-
-        <img
-          src="assets/img/rect-outline-secondary.svg"
-          alt="rect outline"
-          class="rect-outline-secondary-svg2 spinner"
-        />
-
-        <img
-          src="assets/img/rect-outline-primary.svg"
-          alt="rect outline"
-          class="rect-outline-primary-svg spinner"
-        />
-      </div>
-    </section>
-    
-    <!-- company -->
-    <!-- <section id="company" class="p-lg-40 p-lg-56 shadow-covered-md border-radius-20 mx-auto ">
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-12">
-            <div class="image-container d-flex align-items-center justify-content-between">
-              <img src="assets/img/google.png" alt="google" class="logo" />
-              <img src="assets/img/airbnb.png" alt="airbnb" class="logo" />
-              <img src="assets/img/microsoft.png" alt="microsoft" class="logo" />
-              <img src="assets/img/youtube.png" alt="youtube" class="logo" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- About me -->
-    <section id="about" class="py-72 bg-secondary-100">
-      <div class="container">
-        <div class="row mb-40">
-          <div class="col-12">
-            <h2 class="display-1 text-center">About Me</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-lg-5 mb-40 mb-lg-0">
-            <img src="assets/img/about-me-img.png" alt="person" class="about-me-img img-fluid">
-          </div>
-
-          <div class="col-12 col-lg-6 offset-lg-1">
-            <div class="row mb-32">
-              <div class="col-12">
-                <h2 class="h1 text-styled title">Biography</h2>
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="objective mb-24">
-                  <!-- <p class="text text-gray-1">I'm a Freelancer <strong>Front-end Developer</strong> with over 3 years of <strong>experience</strong>. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p> -->
-                  
-                  <p class="text text-gray-1">Creative team player and versatile <strong>Frontend Web Developer</strong> with <strong>3 years</strong> of professional experience and passionate for responsive website design and a firm believer in the mobile-first approach. Specializes in responsive design and ability in writing clean and efficient code, seeks the position of <strong>Frontend Web Developer.</strong></p>
-                </div>
+            <div
+              class="col-xxl-5 col-xl-5 col-lg-6 col-md-12 offset-xxl-1 offset-xl-0 offset-lg-0 d-flex align-items-end position-relative justify-content-center"
+            >
+              <img
+                src="assets/img/person.png"
+                alt="person"
+                class="mx-auto d-block img-fluid banner-img"
+              />
+              <img
+                src="assets/img/banner-big-circle.svg"
+                alt="banner-big-circle"
+                class="position-absolute bottom-0 circle-svg"
+              />
+            </div>
+          </div>
+          <!-- svg bg styles -->
+          <!-- <img src="assets/img/dotted-secondary.svg" alt="dotted-bg" class=" dotted-svg" /> -->
 
-                <hr />
-                
-                <div class="row d-flex flex-wrap flex-column flex-sm-row flex-lg-row justify-content-lg-between text-gray-1 mb-24">
-                  <div class="col-12 col-sm-6 mb-lg-0">
-                    <p><strong>Name:</strong> Sumon Mondol</p>
-                    <p><strong>Birthday:</strong> 10th October</p>
-                    <!-- <p><strong>Age:</strong> 26 years</p> -->
-                    <p><strong>Address:</strong> Dhaka, Bangladesh</p>
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <!-- <p><strong>Phone:</strong> (+880) 123 4567890</p> -->
-                    <p><strong>Email:</strong> sumonsm89@gmail.com</p>
-                    <p><strong>Skype:</strong> sumon.chondro</p>
-                    <p><strong>Github:</strong> Sumon400011</p>
-                  </div>
+          <!-- <img src="assets/img/dotted-secondary.svg" alt="dotted-bg" class=" dotted-secondary-svg2" /> -->
+
+          <!-- <img src="assets/img/dotted-primary.svg" alt="dotted-primary-bg" class=" dotted-primary-svg" /> -->
+
+          <img
+            src="assets/img/plus-secondary-500.svg"
+            alt="plus seconday spinner"
+            class="plus-secondary-svg spinner"
+          />
+
+          <img
+            src="assets/img/plus-primary.svg"
+            alt="plus primary spinner"
+            class="plus-primary-svg spinner"
+          />
+
+          <!-- <img src="assets/img/circle-primary-sm.svg" alt="circle primary" class=" circle-primary-sm-svg" /> -->
+
+          <img
+            src="assets/img/circle-outline-secondary.svg"
+            alt="circle outline"
+            class="circle-outline-secondary-svg"
+          />
+
+          <img
+            src="assets/img/circle-outline-secondary.svg"
+            alt="circle outline"
+            class="circle-outline-secondary-svg2"
+          />
+
+          <img
+            src="assets/img/rect-outline-secondary.svg"
+            alt="rect outline"
+            class="rect-outline-secondary-svg spinner"
+          />
+
+          <img
+            src="assets/img/rect-outline-secondary.svg"
+            alt="rect outline"
+            class="rect-outline-secondary-svg2 spinner"
+          />
+
+          <img
+            src="assets/img/rect-outline-primary.svg"
+            alt="rect outline"
+            class="rect-outline-primary-svg spinner"
+          />
+        </div>
+      </section>
+      
+      <!-- company -->
+      <!-- <section id="company" class="p-lg-40 p-lg-56 shadow-covered-md border-radius-20 mx-auto ">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-12">
+              <div class="image-container d-flex align-items-center justify-content-between">
+                <img src="assets/img/google.png" alt="google" class="logo" />
+                <img src="assets/img/airbnb.png" alt="airbnb" class="logo" />
+                <img src="assets/img/microsoft.png" alt="microsoft" class="logo" />
+                <img src="assets/img/youtube.png" alt="youtube" class="logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- About me -->
+      <section id="about" class="py-72 bg-secondary-100">
+        <div class="container">
+          <div class="row mb-40">
+            <div class="col-12">
+              <h2 class="display-1 text-center">About Me</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-lg-5 mb-40 mb-lg-0">
+              <img src="assets/img/about-me-img.png" alt="person" class="about-me-img img-fluid">
+            </div>
+
+            <div class="col-12 col-lg-6 offset-lg-1">
+              <div class="row mb-32">
+                <div class="col-12">
+                  <h2 class="h1 text-styled title">Biography</h2>
                 </div>
-                
-                <div class="row d-flex flex-column flex-lg-row justify-content-lg-between text-gray-1 mb-40">
-                  <div class="col mb-24 mb-lg-0 my-journey">
-                    <h4 class="h4 text-gray-1 mb-16">My Journey</h4>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="objective mb-24">
+                    <!-- <p class="text text-gray-1">I'm a Freelancer <strong>Front-end Developer</strong> with over 3 years of <strong>experience</strong>. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p> -->
                     
-                    <div class="d-flex flex-wrap justify-content-between media-container">
-                      <div class="d-flex align-items-center mb-12 mb-xl-0">
-                        <div class="flex-shrink-0">
-                          <div class="icon-span d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-chart-simple"></i>
-                          </div>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                          <p class="mb-0 text-xs weight-bold text-gray-1">3 Year Job</p>
-                          <p class="mb-0 text-xs weight-bold text-gray-3">Experience</p>
-                        </div>
-                      </div>
-
-                      <div class="d-flex align-items-center mb-12 mb-xl-0">
-                        <div class="flex-shrink-0">
-                          <div class="icon-span d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-list-check"></i>
-                          </div>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                          <p class="mb-0 text-xs weight-bold text-gray-1">12+ Projects</p>
-                          <p class="mb-0 text-xs weight-bold text-gray-3">Completed</p>
-                        </div>
-                      </div>
-                    </div>
-
+                    <p class="text text-gray-1">Creative team player and versatile <strong>Frontend Web Developer</strong> with <strong>3 years</strong> of professional experience and passionate for responsive website design and a firm believer in the mobile-first approach. Specializes in responsive design and ability in writing clean and efficient code, seeks the position of <strong>Frontend Web Developer.</strong></p>
                   </div>
-                  <div class="col my-interest">
-                    <h4 class="h4 text-gray-1 mb-16">My Interest</h4>
 
-                    <div class="d-flex flex-wrap justify-content-between media-container">
-                      <div class="d-flex align-items-center mb-12 mb-xl-0">
-                        <div class="flex-shrink-0">
-                          <div class="icon-span d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-layer-group"></i>
-                          </div>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                          <p class="mb-0 text-xs weight-bold text-gray-1">Full Stack
-                          </p>
-                          <p class="mb-0 text-xs weight-bold text-gray-3">Development</p>
-                        </div>
-                      </div>
-
-                      <div class="d-flex align-items-center mb-12 mb-xl-0">
-                        <div class="flex-shrink-0">
-                          <div class="icon-span d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-bezier-curve"></i>
-                          </div>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                          <p class="mb-0 text-xs weight-bold text-gray-1">UI/UX</p>
-                          <p class="mb-0 text-xs weight-bold text-gray-3">Development</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-12">
-                    <button class="button button-primary">See Portfolios</button>
-                    <button class="btn-right-icon btn-outline-primary ml-24 ml-sm-32 download-btn">
-                      Download CV
-                      <span class="icon ml-8"><i class="fa-solid fa-download"></i></span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education & Experience -->
-    <section id="education" class="pt-72 pb-72 bg-secondary-100">
-      <div class="container">
-        <div class="row mb-40">
-          <div class="col-12">
-            <h2 class="h1 text-styled title">Education & Experience</h2>
-          </div>
-        </div>
-        
-        <!-- tab menus -->
-        <div class="row">
-          <div class="col-12">
-
-            <!-- pills -->
-            <ul class="nav nav-pills mb-40" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="button-lg button-outline-primary weight-semi-bold " id="educations-tab" data-bs-toggle="pill" data-bs-target="#educations" type="button" role="tab" aria-controls="educations" aria-selected="true">Education</button>
-              </li>
-
-              <li class="nav-item ml-24 ml-sm-32" role="presentation">
-                <button class="button-lg button-outline-primary weight-semi-bold active" id="experiences-tab" data-bs-toggle="pill" data-bs-target="#experiences" type="button" role="tab" aria-controls="experiences" aria-selected="false">Experience</button>
-              </li>
-            </ul>
-
-            <!-- Contents -->
-            <div class="tab-content" id="tabContent">
-
-              <!-- Education -->
-              <div class="tab-pane fade education-content" id="educations" role="tabpanel" aria-labelledby="educations-tab">
-                <div class="row">
+                  <hr />
                   
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
-                    <div class="card">
-                      <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
-                      <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
-                        <p class="school-year mb-8 text-gray-2 weight-semi-bold">2015 - 2019</p>
-                        <h3 class="school-name text-md text-gray-1 weight-bold">The International University of Scholars</h3>
-                        <p class="school-sub text-gray-1 text-sm">Computer Science and Engineering</p>
-                        <div class="school-description mt-16">
-                          <p class="text-gray-2 text-sm mb-0">The International University of Scholars, popularly known as University of Scholars, has started its journey in 2015 with five departments at the outset.</p>
-                        </div>
-                      </div>
+                  <div class="row d-flex flex-wrap flex-column flex-sm-row flex-lg-row justify-content-lg-between text-gray-1 mb-24">
+                    <div class="col-12 col-sm-6 mb-lg-0">
+                      <p><strong>Name:</strong> Sumon Mondol</p>
+                      <p><strong>Birthday:</strong> 10th October</p>
+                      <!-- <p><strong>Age:</strong> 26 years</p> -->
+                      <p><strong>Address:</strong> Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <!-- <p><strong>Phone:</strong> (+880) 123 4567890</p> -->
+                      <p><strong>Email:</strong> sumonsm89@gmail.com</p>
+                      <p><strong>Skype:</strong> sumon.chondro</p>
+                      <p><strong>Github:</strong> Sumon400011</p>
                     </div>
                   </div>
-
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
-                    <div class="card">
-                      <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
-                      <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
-                        <p class="school-year mb-8 text-gray-2 weight-semi-bold">2012 - 2014</p>
-                        <h3 class="school-name text-md text-gray-1 weight-bold">Shaheed Ramiz Uddin Cantonment College</h3>
-                        <p class="school-sub text-gray-1 text-sm">Science</p>
-                        <div class="school-description mt-16">
-                          <p class="text-gray-2 text-sm mb-0">Shaheed Bir Bikrom Ramiz Uddin Cantonment College is a school and college in Dhaka, Bangladesh. It is managed by the Bangladesh Army.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
-                    <div class="card">
-                      <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
-                      <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
-                        <p class="school-year mb-8 text-gray-2 weight-semi-bold">2002 - 2012</p>
-                        <h3 class="school-name text-md text-gray-1 weight-bold">Khilbarirtek Islamia High School</h3>
-                        <p class="school-sub text-gray-1 text-sm">Science</p>
-                        <div class="school-description mt-16">
-                          <p class="text-gray-2 text-sm mb-0">Khilbarirtek Islamia High School is one of the popular High School located in Badda, Dhaka.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              
-              <!-- Experience -->
-              <div class="tab-pane fade show active experiences-content" id="experiences" role="tabpanel" aria-labelledby="experiences-tab">
-                <div class="row">
                   
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
-                    <div class="card">
-                      <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
-                      <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
-                        <div class="header d-flex align-items-start justify-content-between">
-                          <div class="left flex-grow-1">
-                            <h3 class="job-title mb-8 text-md text-gray-1 weight-bold">Frontend Web Developer</h3>
-                            <p class="company-name mb-0 text-gray-3 text-xs weight-semi-bold">SME Informetics Limited</p>
+                  <div class="row d-flex flex-column flex-lg-row justify-content-lg-between text-gray-1 mb-40">
+                    <div class="col mb-24 mb-lg-0 my-journey">
+                      <h4 class="h4 text-gray-1 mb-16">My Journey</h4>
+                      
+                      <div class="d-flex flex-wrap justify-content-between media-container">
+                        <div class="d-flex align-items-center mb-12 mb-xl-0">
+                          <div class="flex-shrink-0">
+                            <div class="icon-span d-flex align-items-center justify-content-center">
+                              <i class="fa-solid fa-chart-simple"></i>
+                            </div>
                           </div>
-                          
-                          <div class="right flex-shrink-1">
-                            <p class="job-year mb-8 text-xs text-gray-2 weight-semi-bold">2021 - 2022</p>
-                            <p class="job-year mb-0 text-xs text-gray-2 weight-semi-bold">Full Time</p>
+                          <div class="flex-grow-1 ms-3">
+                            <p class="mb-0 text-xs weight-bold text-gray-1">3 Year Job</p>
+                            <p class="mb-0 text-xs weight-bold text-gray-3">Experience</p>
                           </div>
                         </div>
-                        <hr class="py-16"/>
-                        <div class="job-description mt-16">
-                          <p class="text-gray-2 text-sm mb-0">A full service digital outsourcing agency · Digital Solutions for marketing, IT, sales organizations and start-ups.</p>
+
+                        <div class="d-flex align-items-center mb-12 mb-xl-0">
+                          <div class="flex-shrink-0">
+                            <div class="icon-span d-flex align-items-center justify-content-center">
+                              <i class="fa-solid fa-list-check"></i>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            <p class="mb-0 text-xs weight-bold text-gray-1">12+ Projects</p>
+                            <p class="mb-0 text-xs weight-bold text-gray-3">Completed</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col my-interest">
+                      <h4 class="h4 text-gray-1 mb-16">My Interest</h4>
+
+                      <div class="d-flex flex-wrap justify-content-between media-container">
+                        <div class="d-flex align-items-center mb-12 mb-xl-0">
+                          <div class="flex-shrink-0">
+                            <div class="icon-span d-flex align-items-center justify-content-center">
+                              <i class="fa-solid fa-layer-group"></i>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            <p class="mb-0 text-xs weight-bold text-gray-1">Full Stack
+                            </p>
+                            <p class="mb-0 text-xs weight-bold text-gray-3">Development</p>
+                          </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-12 mb-xl-0">
+                          <div class="flex-shrink-0">
+                            <div class="icon-span d-flex align-items-center justify-content-center">
+                              <i class="fa-solid fa-bezier-curve"></i>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            <p class="mb-0 text-xs weight-bold text-gray-1">UI/UX</p>
+                            <p class="mb-0 text-xs weight-bold text-gray-3">Development</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
-                    <div class="card">
-                      <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
-                      <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
-                        <div class="header d-flex align-items-start justify-content-between">
-                          <div class="left flex-grow-1">
-                            <h3 class="job-title mb-8 text-md text-gray-1 weight-bold">Jr Web Designer</h3>
-                            <p class="company-name mb-0 text-gray-3 text-xs weight-semi-bold">Parkingkoi inc Limited</p>
-                          </div>
-                          
-                          <div class="right flex-shrink-1">
-                            <p class="job-year mb-8 text-xs text-gray-2 weight-semi-bold">2020 - 2021</p>
-                            <p class="job-nature mb-0 text-xs text-gray-2 weight-semi-bold">Full Time</p>
-                          </div>
-                        </div>
-                        <hr class="py-16"/>
-                        <div class="job-description mt-16">
-                          <p class="text-gray-2 text-sm mb-0">Parkingkoi have allotted monthly parking places for you all over Dhaka, Chiitagong & Sylhet. Parkingkoi maintain strict quality control before we secure a parking place for customer</p>
-                        </div>
-                      </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <button class="button button-primary">See Portfolios</button>
+                      <button class="btn-right-icon btn-outline-primary ml-24 ml-sm-32 download-btn">
+                        Download CV
+                        <span class="icon ml-8"><i class="fa-solid fa-download"></i></span>
+                      </button>
                     </div>
                   </div>
-
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
-                    <div class="card">
-                      <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
-                      <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
-                        <div class="header d-flex align-items-start justify-content-between">
-                          <div class="left flex-grow-1">
-                            <h3 class="job-title mb-8 text-md text-gray-1 weight-bold">Web Developer</h3>
-                            <p class="company-name mb-0 text-gray-3 text-xs weight-semi-bold">New Horizons CLC</p>
-                          </div>
-                          
-                          <div class="right flex-shrink-1">
-                            <p class="job-year mb-8 text-xs text-gray-2 weight-semi-bold">2019 - 2020</p>
-                            <p class="job-nature mb-0 text-xs text-gray-2 weight-semi-bold">Full Time</p>
-                          </div>
-                        </div>
-                        <hr class="py-16"/>
-                        <div class="job-description mt-16">
-                          <p class="text-gray-2 text-sm mb-0">With 300 centers in 70 countries, New Horizons Computer Learning Center is the largest independent IT Training Provider in the world, delivering more courses</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
               </div>
-
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills -->
-    <section id="skill" class="pt-72 pb-72 bg-secondary-100">
-      <span class="bg-img"><i class="fa-brands fa-react my-4" aria-hidden="true"></i></span>
-      <div class="container">
-        <div class="row mb-40">
-          <div class="col-12">
-            <h2 class="h1 text-styled title">Skills</h2>
+      <!-- Education & Experience -->
+      <section id="education" class="pt-72 pb-72 bg-secondary-100">
+        <div class="container">
+          <div class="row mb-40">
+            <div class="col-12">
+              <h2 class="h1 text-styled title">Education & Experience</h2>
+            </div>
           </div>
-        </div>
-        <div class="row ">
           
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32">
-            <div class="card">
-              <div class="view">
-                <i class="fa-brands fa-react fa-6x my-4" aria-hidden="true"></i>
-                <p class="card-title text-md weight-bold"><strong>Front-End Development</strong></p>
+          <!-- tab menus -->
+          <div class="row">
+            <div class="col-12">
+
+              <!-- pills -->
+              <ul class="nav nav-pills mb-40" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="button-lg button-outline-primary weight-semi-bold " id="educations-tab" data-bs-toggle="pill" data-bs-target="#educations" type="button" role="tab" aria-controls="educations" aria-selected="true">Education</button>
+                </li>
+
+                <li class="nav-item ml-24 ml-sm-32" role="presentation">
+                  <button class="button-lg button-outline-primary weight-semi-bold active" id="experiences-tab" data-bs-toggle="pill" data-bs-target="#experiences" type="button" role="tab" aria-controls="experiences" aria-selected="false">Experience</button>
+                </li>
+              </ul>
+
+              <!-- Contents -->
+              <div class="tab-content" id="tabContent">
+
+                <!-- Education -->
+                <div class="tab-pane fade education-content" id="educations" role="tabpanel" aria-labelledby="educations-tab">
+                  <div class="row">
+                    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
+                      <div class="card">
+                        <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
+                        <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
+                          <p class="school-year mb-8 text-gray-2 weight-semi-bold">2015 - 2019</p>
+                          <h3 class="school-name text-md text-gray-1 weight-bold">The International University of Scholars</h3>
+                          <p class="school-sub text-gray-1 text-sm">Computer Science and Engineering</p>
+                          <div class="school-description mt-16">
+                            <p class="text-gray-2 text-sm mb-0">The International University of Scholars, popularly known as University of Scholars, has started its journey in 2015 with five departments at the outset.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
+                      <div class="card">
+                        <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
+                        <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
+                          <p class="school-year mb-8 text-gray-2 weight-semi-bold">2012 - 2014</p>
+                          <h3 class="school-name text-md text-gray-1 weight-bold">Shaheed Ramiz Uddin Cantonment College</h3>
+                          <p class="school-sub text-gray-1 text-sm">Science</p>
+                          <div class="school-description mt-16">
+                            <p class="text-gray-2 text-sm mb-0">Shaheed Bir Bikrom Ramiz Uddin Cantonment College is a school and college in Dhaka, Bangladesh. It is managed by the Bangladesh Army.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
+                      <div class="card">
+                        <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
+                        <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
+                          <p class="school-year mb-8 text-gray-2 weight-semi-bold">2002 - 2012</p>
+                          <h3 class="school-name text-md text-gray-1 weight-bold">Khilbarirtek Islamia High School</h3>
+                          <p class="school-sub text-gray-1 text-sm">Science</p>
+                          <div class="school-description mt-16">
+                            <p class="text-gray-2 text-sm mb-0">Khilbarirtek Islamia High School is one of the popular High School located in Badda, Dhaka.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                
+                <!-- Experience -->
+                <div class="tab-pane fade show active experiences-content" id="experiences" role="tabpanel" aria-labelledby="experiences-tab">
+                  <div class="row">
+                    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
+                      <div class="card">
+                        <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
+                        <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
+                          <div class="header d-flex align-items-start justify-content-between">
+                            <div class="left flex-grow-1">
+                              <h3 class="job-title mb-8 text-md text-gray-1 weight-bold">Frontend Web Developer</h3>
+                              <p class="company-name mb-0 text-gray-3 text-xs weight-semi-bold">SME Informetics Limited</p>
+                            </div>
+                            
+                            <div class="right flex-shrink-1">
+                              <p class="job-year mb-8 text-xs text-gray-2 weight-semi-bold">2021 - 2022</p>
+                              <p class="job-year mb-0 text-xs text-gray-2 weight-semi-bold">Full Time</p>
+                            </div>
+                          </div>
+                          <hr class="py-16"/>
+                          <div class="job-description mt-16">
+                            <p class="text-gray-2 text-sm mb-0">A full service digital outsourcing agency · Digital Solutions for marketing, IT, sales organizations and start-ups.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
+                      <div class="card">
+                        <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
+                        <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
+                          <div class="header d-flex align-items-start justify-content-between">
+                            <div class="left flex-grow-1">
+                              <h3 class="job-title mb-8 text-md text-gray-1 weight-bold">Jr Web Designer</h3>
+                              <p class="company-name mb-0 text-gray-3 text-xs weight-semi-bold">Parkingkoi inc Limited</p>
+                            </div>
+                            
+                            <div class="right flex-shrink-1">
+                              <p class="job-year mb-8 text-xs text-gray-2 weight-semi-bold">2020 - 2021</p>
+                              <p class="job-nature mb-0 text-xs text-gray-2 weight-semi-bold">Full Time</p>
+                            </div>
+                          </div>
+                          <hr class="py-16"/>
+                          <div class="job-description mt-16">
+                            <p class="text-gray-2 text-sm mb-0">Parkingkoi have allotted monthly parking places for you all over Dhaka, Chiitagong & Sylhet. Parkingkoi maintain strict quality control before we secure a parking place for customer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32 mb-lg-0 mb-xl-0">
+                      <div class="card">
+                        <img src="assets/img/circle-secondary-lg.svg" alt="circle-secondary-lg" class="bg-circle img-fluid" />
+                        <div class="card-body p-24 p-sm-24 p-md-24 p-lg-40">
+                          <div class="header d-flex align-items-start justify-content-between">
+                            <div class="left flex-grow-1">
+                              <h3 class="job-title mb-8 text-md text-gray-1 weight-bold">Web Developer</h3>
+                              <p class="company-name mb-0 text-gray-3 text-xs weight-semi-bold">New Horizons CLC</p>
+                            </div>
+                            
+                            <div class="right flex-shrink-1">
+                              <p class="job-year mb-8 text-xs text-gray-2 weight-semi-bold">2019 - 2020</p>
+                              <p class="job-nature mb-0 text-xs text-gray-2 weight-semi-bold">Full Time</p>
+                            </div>
+                          </div>
+                          <hr class="py-16"/>
+                          <div class="job-description mt-16">
+                            <p class="text-gray-2 text-sm mb-0">With 300 centers in 70 countries, New Horizons Computer Learning Center is the largest independent IT Training Provider in the world, delivering more courses</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
-              <div class="card-body">
-                <ul class="mb-0">
-                    <li>HTML, CSS, JavaScript & JQuery</li>
-                    <li>Vue.js / React js</li>
-                    <li>CSS Preprocessor - Sass</li>
-                    <li>Wordpress - DIVI</li>
-                    <li>Webflow</li>
-                    <li>CSS Frameworks (Bootstrap)</li>
-                    <li>Responsive Web Design</li>
-                </ul>
-              </div>
-              <div class="card-footer">&nbsp;</div>
             </div>
           </div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32">
-            <div class="card">
-              <div class="view">
-                <i class="fa-solid fa-brush fa-6x my-4" aria-hidden="true"></i>
-                <p class="card-title text-md weight-bold"><strong>Graphics & UI Design</strong></p>
-              </div>
-              <div class="card-body">
-                <ul class="mb-0">
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Adobe Xd / Figma</li>
-                    <li>Web UI design</li>
-                    <li>Logo Design</li>
-                    <li>Banner Design</li>
-                    <li>Buisiness Card Design</li>
-                </ul>
-              </div>
-              <div class="card-footer">&nbsp;</div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32">
-            <div class="card">
-              <div class="view">
-                <i class="fa-solid fa-shapes fa-6x my-4" aria-hidden="true"></i>
-                <p class="card-title text-md weight-bold"><strong>Others</strong></p>
-              </div>
-              <div class="card-body">
-                <ul class="mb-0">
-                    <li>Git / Github</li>
-                    <li>Email Marketing (Mailchimp)</li>
-                    <li>Project Management with Redmine / Jira</li>
-                    <li>Finding Bug and Fixing</li>
-                    <li>Laravel and Node js (Beginner)</li>
-                    <li>Css Frameworks - Tailwind / Materialize css</li>
-                    <li>Node.js / Express.js</li>
-                </ul>
-              </div>
-              <div class="card-footer">&nbsp;</div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- Skills -->
+      <section id="skill" class="pt-72 pb-72 bg-secondary-100">
+        <span class="bg-img"><i class="fa-brands fa-react my-4" aria-hidden="true"></i></span>
+        <div class="container">
+          <div class="row mb-40">
+            <div class="col-12">
+              <h2 class="h1 text-styled title">Skills</h2>
+            </div>
+          </div>
+          <div class="row ">
+            
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32">
+              <div class="card">
+                <div class="view">
+                  <i class="fa-brands fa-react fa-6x my-4" aria-hidden="true"></i>
+                  <p class="card-title text-md weight-bold"><strong>Front-End Development</strong></p>
+                </div>
+                <div class="card-body">
+                  <ul class="mb-0">
+                      <li>HTML, CSS, JavaScript & JQuery</li>
+                      <li>Vue.js / React js</li>
+                      <li>CSS Preprocessor - Sass</li>
+                      <li>Wordpress - DIVI</li>
+                      <li>Webflow</li>
+                      <li>CSS Frameworks (Bootstrap)</li>
+                      <li>Responsive Web Design</li>
+                  </ul>
+                </div>
+                <div class="card-footer">&nbsp;</div>
+              </div>
+            </div>
 
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32">
+              <div class="card">
+                <div class="view">
+                  <i class="fa-solid fa-brush fa-6x my-4" aria-hidden="true"></i>
+                  <p class="card-title text-md weight-bold"><strong>Graphics & UI Design</strong></p>
+                </div>
+                <div class="card-body">
+                  <ul class="mb-0">
+                      <li>Photoshop</li>
+                      <li>Illustrator</li>
+                      <li>Adobe Xd / Figma</li>
+                      <li>Web UI design</li>
+                      <li>Logo Design</li>
+                      <li>Banner Design</li>
+                      <li>Buisiness Card Design</li>
+                  </ul>
+                </div>
+                <div class="card-footer">&nbsp;</div>
+              </div>
+            </div>
 
-    <!-- Portfolios -->
-    <section id="portfolio" class="pt-72 pb-120">
-      <div class="container">
-        <div class="row mb-40">
-          <div class="col-12">
-            <h2 class="h1 text-styled section-title">Portfolios</h2>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-32">
+              <div class="card">
+                <div class="view">
+                  <i class="fa-solid fa-shapes fa-6x my-4" aria-hidden="true"></i>
+                  <p class="card-title text-md weight-bold"><strong>Others</strong></p>
+                </div>
+                <div class="card-body">
+                  <ul class="mb-0">
+                      <li>Git / Github</li>
+                      <li>Email Marketing (Mailchimp)</li>
+                      <li>Project Management with Redmine / Jira</li>
+                      <li>Finding Bug and Fixing</li>
+                      <li>Laravel and Node js (Beginner)</li>
+                      <li>Css Frameworks - Tailwind / Materialize css</li>
+                      <li>Node.js / Express.js</li>
+                  </ul>
+                </div>
+                <div class="card-footer">&nbsp;</div>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div class="row row-cols-12 row-cols-xl-6">
-          
-          <!-- Thrivelab -->
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
-            <div class="d-flex align-items-stretch border-radius-20 media thrivelab">
-              <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
-                <div class="w-100">
-                  <strong class="media-title h5 weight-bold mb-8 d-block">Thrivelab</strong>
-                  <p class="text-sm text-gray-2 mb-0 media-description">Thrivelab provides evidence-based hormone & testosterone balancing programs and natural bioidentical products to alleviate age-related symptoms.</p>
-                  <a 
-                    href="https://www.thrivelab.com/"
-                    target="_blank"
-                    class="secondary-link weight-semi-bold"
-                  >
+      </section>
+
+
+
+      <!-- Portfolios -->
+      <section id="portfolio" class="pt-72 pb-120">
+        <div class="container">
+          <div class="row mb-40">
+            <div class="col-12">
+              <h2 class="h1 text-styled section-title">Portfolios</h2>
+            </div>
+          </div>
+          <div class="row row-cols-12 row-cols-xl-6">
+            
+            <!-- Thrivelab -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
+              <div class="d-flex align-items-stretch border-radius-20 media thrivelab">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
+                  <div class="w-100">
+                    <strong class="media-title h5 weight-bold mb-8 d-block">Thrivelab</strong>
+                    <p class="text-sm text-gray-2 mb-0 media-description">Thrivelab provides evidence-based hormone & testosterone balancing programs and natural bioidentical products to alleviate age-related symptoms.</p>
+                    <a 
+                      href="https://www.thrivelab.com/"
+                      target="_blank"
+                      class="secondary-link weight-semi-bold"
+                    >
+                        View Project 
+                        <span class="right-arrow">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
+                  <img src="assets/img/ThriveLab.png" alt="ThriveLab"  class="img-fluid mt-40"/>
+                </div>
+              </div>
+            </div>
+
+            <!-- OTORide -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
+              <div class="d-flex align-items-stretch border-radius-20 media otoride">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
+                  <div class="w-100">
+                    <strong class="media-title h5 weight-bold mb-8 d-block">OTORide</strong>
+                    <p class="text-sm text-gray-2 mb-0 media-description">Meet OTORide, the most advanced Bike, eBike, Scooter Sharing platform.</p>
+                    <a 
+                      href="https://www.otoride.co/"
+                      target="_blank"
+                      class="secondary-link weight-semi-bold"
+                    >
                       View Project 
                       <span class="right-arrow">
                         <i class="fa-solid fa-arrow-right"></i>
                       </span>
-                  </a>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
+                  <img src="assets/img/otoride.png" alt="otoride"  class="img-fluid mt-40"/>
                 </div>
               </div>
-
-              <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
-                <img src="assets/img/ThriveLab.png" alt="ThriveLab"  class="img-fluid mt-40"/>
-              </div>
             </div>
-          </div>
 
-          <!-- OTORide -->
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
-            <div class="d-flex align-items-stretch border-radius-20 media otoride">
-              <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
-                <div class="w-100">
-                  <strong class="media-title h5 weight-bold mb-8 d-block">OTORide</strong>
-                  <p class="text-sm text-gray-2 mb-0 media-description">Meet OTORide, the most advanced Bike, eBike, Scooter Sharing platform.</p>
-                  <a 
-                    href="https://www.otoride.co/"
-                    target="_blank"
-                    class="secondary-link weight-semi-bold"
-                  >
-                    View Project 
-                    <span class="right-arrow">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </span>
-                  </a>
+            <!-- Seek°XR -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
+              <div class="d-flex align-items-stretch border-radius-20 media seekxr">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
+                  <div class="w-100">
+                    <strong class="media-title h5 weight-bold mb-8 d-block">Seek°XR</strong>
+                    <p class="text-sm text-gray-2 mb-0 media-description">Seek is the world's first #AugmentedReality community allowing creators to publish and users to discover the latest #AR #MR content.</p>
+                    <a 
+                      href="https://seekxr.com/"
+                      target="_blank"
+                      class="secondary-link weight-semi-bold"
+                    >
+                      View Project 
+                      <span class="right-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
+                  <img src="assets/img/seekxr.png" alt="Seek XR"  class="img-fluid mt-40"/>
                 </div>
               </div>
-
-              <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
-                <img src="assets/img/otoride.png" alt="otoride"  class="img-fluid mt-40"/>
-              </div>
             </div>
-          </div>
 
-          <!-- Seek°XR -->
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
-            <div class="d-flex align-items-stretch border-radius-20 media seekxr">
-              <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
-                <div class="w-100">
-                  <strong class="media-title h5 weight-bold mb-8 d-block">Seek°XR</strong>
-                  <p class="text-sm text-gray-2 mb-0 media-description">Seek is the world's first #AugmentedReality community allowing creators to publish and users to discover the latest #AR #MR content.</p>
-                  <a 
-                    href="https://seekxr.com/"
-                    target="_blank"
-                    class="secondary-link weight-semi-bold"
-                  >
-                    View Project 
-                    <span class="right-arrow">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </span>
-                  </a>
+            <!-- EnergySage -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
+              <div class="d-flex align-items-stretch border-radius-20 media energysage">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
+                  <div class="w-100">
+                    <strong class="media-title h5 weight-bold mb-8 d-block">EnergySage</strong>
+                    <p class="text-sm text-gray-2 mb-0 media-description">EnergySage is the leading online marketplace for solar energy systems.</p>
+                    <a 
+                      href="https://news.energysage.stg.bglobal.com/"
+                      target="_blank"
+                      class="secondary-link weight-semi-bold"
+                    >
+                      View Project 
+                      <span class="right-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
+                  <img src="assets/img/energysage.png" alt="EnergySage"  class="img-fluid mt-40"/>
                 </div>
               </div>
-
-              <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
-                <img src="assets/img/seekxr.png" alt="Seek XR"  class="img-fluid mt-40"/>
-              </div>
             </div>
-          </div>
 
-          <!-- EnergySage -->
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
-            <div class="d-flex align-items-stretch border-radius-20 media energysage">
-              <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
-                <div class="w-100">
-                  <strong class="media-title h5 weight-bold mb-8 d-block">EnergySage</strong>
-                  <p class="text-sm text-gray-2 mb-0 media-description">EnergySage is the leading online marketplace for solar energy systems.</p>
-                  <a 
-                    href="https://news.energysage.stg.bglobal.com/"
-                    target="_blank"
-                    class="secondary-link weight-semi-bold"
-                  >
-                    View Project 
-                    <span class="right-arrow">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </span>
-                  </a>
+            <!-- DataSoft NEXT -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
+              <div class="d-flex align-items-stretch border-radius-20 media datasoft">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
+                  <div class="w-100">
+                    <strong class="media-title h5 weight-bold mb-8 d-block">DataSoft NEXT</strong>
+                    <p class="text-sm text-gray-2 mb-0 media-description">DataSoft Systems Bangladesh Limited A next-gen software, logistics and automation company with more than two decades of experience in large-scale projects.</p>
+                    <a 
+                      href="http://demo.datasoft-bd.com/"
+                      target="_blank"
+                      class="secondary-link weight-semi-bold"
+                    >
+                      View Project 
+                      <span class="right-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
+                  <img src="assets/img/datasoft-next.png" alt="datasoft-next"  class="img-fluid mt-40"/>
                 </div>
               </div>
-
-              <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
-                <img src="assets/img/energysage.png" alt="EnergySage"  class="img-fluid mt-40"/>
-              </div>
             </div>
-          </div>
 
-          <!-- DataSoft NEXT -->
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
-            <div class="d-flex align-items-stretch border-radius-20 media datasoft">
-              <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
-                <div class="w-100">
-                  <strong class="media-title h5 weight-bold mb-8 d-block">DataSoft NEXT</strong>
-                  <p class="text-sm text-gray-2 mb-0 media-description">DataSoft Systems Bangladesh Limited A next-gen software, logistics and automation company with more than two decades of experience in large-scale projects.</p>
-                  <a 
-                    href="http://demo.datasoft-bd.com/"
-                    target="_blank"
-                    class="secondary-link weight-semi-bold"
-                  >
-                    View Project 
-                    <span class="right-arrow">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </span>
-                  </a>
+            <!-- Conversica -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
+              <div class="d-flex align-items-stretch border-radius-20 media conversica">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
+                  <div class="w-100">
+                    <strong class="media-title h5 weight-bold mb-8 d-block">Conversica</strong>
+                    <p class="text-sm text-gray-2 mb-0 media-description">Conversica is the leading Conversational AI solution, helping attract, acquire and grow customers at scale with AI Assistants using Conversational AI.</p>
+                    <a 
+                      href="https://www.conversica.com/"
+                      target="_blank"
+                      class="secondary-link weight-semi-bold"
+                    >
+                      View Project 
+                      <span class="right-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
+                  <img src="assets/img/conversica.png" alt="Conversica"  class="img-fluid mt-40"/>
                 </div>
               </div>
-
-              <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
-                <img src="assets/img/datasoft-next.png" alt="datasoft-next"  class="img-fluid mt-40"/>
-              </div>
             </div>
-          </div>
 
-          <!-- Conversica -->
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-32">
-            <div class="d-flex align-items-stretch border-radius-20 media conversica">
-              <div class="flex-shrink-0 d-flex align-items-center justify-content-center mb-32 mb-xxl-40 ml-32 ml-xxl-40 pt-32 pt-xxl-40 media-text-module">
-                <div class="w-100">
-                  <strong class="media-title h5 weight-bold mb-8 d-block">Conversica</strong>
-                  <p class="text-sm text-gray-2 mb-0 media-description">Conversica is the leading Conversational AI solution, helping attract, acquire and grow customers at scale with AI Assistants using Conversational AI.</p>
-                  <a 
-                    href="https://www.conversica.com/"
-                    target="_blank"
-                    class="secondary-link weight-semi-bold"
-                  >
-                    View Project 
-                    <span class="right-arrow">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="flex-grow-1 ml-8 d-flex align-items-end justify-content-end">
-                <img src="assets/img/conversica.png" alt="Conversica"  class="img-fluid mt-40"/>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <!-- testimonial -->
-    <section id="testimonial" class="pt-72 pb-72 pb-md-120 bg-primary-100 border-radius-12">
-      <img src="assets/img/testimonial-bg-circle.svg" alt="testimonial-bg-circle" class="testimonial-bg-circle" />
-      <div class="container">
-        <div class="row mb-40">
-          <div class="col-12">
-            <h2 class="h1 text-styled title">Testimonials</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="owl-carousel owl-theme testimonial-slider">
+      </section>
 
 
-              <div class="item p-15">
-                <div class="d-flex align-items-center media bg-white">
-                  <div class="flex-shrink-0 d-flex align-items-center justify-content-center img-container">
-                    <img src="assets/img/avatar1.jpg" class="" alt="avatar1.jpg"/>
-                  </div>
-                  <div class="flex-grow-1 media-body ml-sm-24 ml-0">
-                    <strong class="weight-semi-bold mb-0 text-gray-1">Anna Smith</strong>
-                    <p class="text-sm text-gray-2 mb-0">Chief Technology Officer, Facebook</p>
-                    <hr class="w-25" />
-                    <p class="text-sm text-gray-2 mb-0">Lorem ipsum dolor sit, amet, consec tetur adipisicing elit. Aperiam maxime quisquam fuga labori osam dolor ibus veniam ducimus volupt atibus volup tatem volup tatum molestiae minima ipsa in qui dolorum, reprehe nderit, quia ab facere, praes entium.</p>
+
+
+      <!-- testimonial -->
+      <section id="testimonial" class="pt-72 pb-72 pb-md-120 bg-primary-100 border-radius-12">
+        <img src="assets/img/testimonial-bg-circle.svg" alt="testimonial-bg-circle" class="testimonial-bg-circle" />
+        <div class="container">
+          <div class="row mb-40">
+            <div class="col-12">
+              <h2 class="h1 text-styled title">Testimonials</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="owl-carousel owl-theme testimonial-slider">
+
+
+                <div class="item p-15">
+                  <div class="d-flex align-items-center media bg-white">
+                    <div class="flex-shrink-0 d-flex align-items-center justify-content-center img-container">
+                      <img src="assets/img/avatar1.jpg" class="" alt="avatar1.jpg"/>
+                    </div>
+                    <div class="flex-grow-1 media-body ml-sm-24 ml-0">
+                      <strong class="weight-semi-bold mb-0 text-gray-1">Anna Smith</strong>
+                      <p class="text-sm text-gray-2 mb-0">Chief Technology Officer, Facebook</p>
+                      <hr class="w-25" />
+                      <p class="text-sm text-gray-2 mb-0">Lorem ipsum dolor sit, amet, consec tetur adipisicing elit. Aperiam maxime quisquam fuga labori osam dolor ibus veniam ducimus volupt atibus volup tatem volup tatum molestiae minima ipsa in qui dolorum, reprehe nderit, quia ab facere, praes entium.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="item p-15">
-                <div class="d-flex align-items-center media bg-white">
-                  <div class="flex-shrink-0 d-flex align-items-center justify-content-center img-container">
-                    <img src="assets/img/avatar2.jpg" class="" alt="avatar1.jpg"/>
-                  </div>
-                  <div class="flex-grow-1 media-body ml-sm-24 ml-0">
-                    <strong class="weight-semi-bold mb-0 text-gray-1">Anna Smith</strong>
-                    <p class="text-sm text-gray-2 mb-0">Chief Technology Officer, Facebook</p>
-                    <hr class="w-25" />
-                    <p class="text-sm text-gray-2 mb-0">Lorem ipsum dolor sit, amet, consec tetur adipisicing elit. Aperiam maxime quisquam fuga labori osam dolor ibus veniam ducimus volupt atibus volup tatem volup tatum molestiae minima ipsa in qui dolorum, reprehe nderit, quia ab facere, praes entium.</p>
+                <div class="item p-15">
+                  <div class="d-flex align-items-center media bg-white">
+                    <div class="flex-shrink-0 d-flex align-items-center justify-content-center img-container">
+                      <img src="assets/img/avatar2.jpg" class="" alt="avatar1.jpg"/>
+                    </div>
+                    <div class="flex-grow-1 media-body ml-sm-24 ml-0">
+                      <strong class="weight-semi-bold mb-0 text-gray-1">Anna Smith</strong>
+                      <p class="text-sm text-gray-2 mb-0">Chief Technology Officer, Facebook</p>
+                      <hr class="w-25" />
+                      <p class="text-sm text-gray-2 mb-0">Lorem ipsum dolor sit, amet, consec tetur adipisicing elit. Aperiam maxime quisquam fuga labori osam dolor ibus veniam ducimus volupt atibus volup tatem volup tatum molestiae minima ipsa in qui dolorum, reprehe nderit, quia ab facere, praes entium.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="item p-15">
-                <div class="d-flex align-items-center media bg-white">
-                  <div class="flex-shrink-0 d-flex align-items-center justify-content-center img-container">
-                    <img src="assets/img/avatar3.jpg" class="" alt="avatar1.jpg"/>
-                  </div>
-                  <div class="flex-grow-1 media-body ml-sm-24 ml-0">
-                    <strong class="weight-semi-bold mb-0 text-gray-1">Anna Smith</strong>
-                    <p class="text-sm text-gray-2 mb-0">Chief Technology Officer, Facebook</p>
-                    <hr class="w-25" />
-                    <p class="text-sm text-gray-2 mb-0">Lorem ipsum dolor sit, amet, consec tetur adipisicing elit. Aperiam maxime quisquam fuga labori osam dolor ibus veniam ducimus volupt atibus volup tatem volup tatum molestiae minima ipsa in qui dolorum, reprehe nderit, quia ab facere, praes entium.</p>
+                <div class="item p-15">
+                  <div class="d-flex align-items-center media bg-white">
+                    <div class="flex-shrink-0 d-flex align-items-center justify-content-center img-container">
+                      <img src="assets/img/avatar3.jpg" class="" alt="avatar1.jpg"/>
+                    </div>
+                    <div class="flex-grow-1 media-body ml-sm-24 ml-0">
+                      <strong class="weight-semi-bold mb-0 text-gray-1">Anna Smith</strong>
+                      <p class="text-sm text-gray-2 mb-0">Chief Technology Officer, Facebook</p>
+                      <hr class="w-25" />
+                      <p class="text-sm text-gray-2 mb-0">Lorem ipsum dolor sit, amet, consec tetur adipisicing elit. Aperiam maxime quisquam fuga labori osam dolor ibus veniam ducimus volupt atibus volup tatem volup tatum molestiae minima ipsa in qui dolorum, reprehe nderit, quia ab facere, praes entium.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- contact -->
-    <section id="contact" class="pt-72 pb-120">
-      <div class="container">
-        <div class="row mb-40">
-          <div class="col-12">
-            <h2 class="h1 text-gray-1 text-center">Contact</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 mb-32 mb-xl-0">
-            <h3 class="h3 text-gray-1 mb-0">Get In Touch</h3>
-            <p class="text-gray-2 mb-32">Lets Talks About Your Project</p>
-
-            <!-- Address -->
-            <div class="d-flex align-items-center py-24 px-32 media address mb-24">
-              <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="width: 50px;">
-                <span class="text-primary icon-span">
-                  <i class="fa-regular fa-compass"></i>
-                </span>
-              </div>
-              <div class="flex-grow-1 ml-24">
-                <strong class="weight-semi-bold mb-0">Address</strong>
-                <p class="text-sm text-gray-2 mb-0">Dhaka, Bangladesh</p>
-              </div>
+      <!-- contact -->
+      <section id="contact" class="pt-72 pb-120">
+        <div class="container">
+          <div class="row mb-40">
+            <div class="col-12">
+              <h2 class="h1 text-gray-1 text-center">Contact</h2>
             </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 mb-32 mb-xl-0">
+              <h3 class="h3 text-gray-1 mb-0">Get In Touch</h3>
+              <p class="text-gray-2 mb-32">Lets Talks About Your Project</p>
 
-            <!-- Email -->
-            <div class="d-flex align-items-center py-24 px-32 media email mb-24">
-              <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="width: 50px;">
-                <span class="text-primary icon-span">
-                  <i class="fa-regular fa-envelope"></i>
-                </span>
+              <!-- Address -->
+              <div class="d-flex align-items-center py-24 px-32 media address mb-24">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="width: 50px;">
+                  <span class="text-primary icon-span">
+                    <i class="fa-regular fa-compass"></i>
+                  </span>
+                </div>
+                <div class="flex-grow-1 ml-24">
+                  <strong class="weight-semi-bold mb-0">Address</strong>
+                  <p class="text-sm text-gray-2 mb-0">Dhaka, Bangladesh</p>
+                </div>
               </div>
-              <div class="flex-grow-1 ml-24">
-                <strong class="weight-semi-bold mb-0">Email</strong>
-                <p class="text-sm text-gray-2 mb-0">sumonsm89@gmail.com</p>
+
+              <!-- Email -->
+              <div class="d-flex align-items-center py-24 px-32 media email mb-24">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="width: 50px;">
+                  <span class="text-primary icon-span">
+                    <i class="fa-regular fa-envelope"></i>
+                  </span>
+                </div>
+                <div class="flex-grow-1 ml-24">
+                  <strong class="weight-semi-bold mb-0">Email</strong>
+                  <p class="text-sm text-gray-2 mb-0">sumonsm89@gmail.com</p>
+                </div>
               </div>
+              
+              <!-- Whatsapp -->
+              <div class="d-flex align-items-center py-24 px-32 media whatsapp mb-24">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="width: 50px;">
+                  <span class="text-primary icon-span">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </span>
+                </div>
+                <div class="flex-grow-1 ml-24">
+                  <strong class="weight-semi-bold mb-0">Whatsapp</strong>
+                  <p class="text-sm text-gray-2 mb-0">+8801234567890</p>
+                </div>
+              </div>
+
             </div>
             
-            <!-- Whatsapp -->
-            <div class="d-flex align-items-center py-24 px-32 media whatsapp mb-24">
-              <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="width: 50px;">
-                <span class="text-primary icon-span">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </span>
-              </div>
-              <div class="flex-grow-1 ml-24">
-                <strong class="weight-semi-bold mb-0">Whatsapp</strong>
-                <p class="text-sm text-gray-2 mb-0">+8801234567890</p>
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5">
-            <form class="w-100 input-container">
-              
-              <div class="row">
-                <div class="col-md-6 col-sm-12 col-12">
-                  <div class="input-group mb-32">
-                    <label for="firstname" >First Name</label>
-                    <input type="text" class="input m-0" placeholder="John" id="firstname" />
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5">
+              <form class="w-100 input-container">
+                
+                <div class="row">
+                  <div class="col-md-6 col-sm-12 col-12">
+                    <div class="input-group mb-32">
+                      <label for="firstname" >First Name</label>
+                      <input type="text" class="input m-0" placeholder="John" id="firstname" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12 col-12">
+                    <div class="input-group mb-32">
+                      <label for="lastname" >Last name</label>
+                      <input type="text" class="input m-0" placeholder="Doe" id="lastname" />
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-12 col-12">
-                  <div class="input-group mb-32">
-                    <label for="lastname" >Last name</label>
-                    <input type="text" class="input m-0" placeholder="Doe" id="lastname" />
-                  </div>
+
+                <div class="input-group mb-32">
+                  <label for="email" >Email</label>
+                  <input type="text" class="input m-0" placeholder="yourmail@gmail.com" id="email" />
                 </div>
-              </div>
 
-              <div class="input-group mb-32">
-                <label for="email" >Email</label>
-                <input type="text" class="input m-0" placeholder="yourmail@gmail.com" id="email" />
-              </div>
+                <div class="input-group mb-32">
+                  <label for="subject" >Your Subject</label>
+                  <input type="text" class="input m-0" placeholder="Discuss About a Project" id="subject" />
+                </div>
 
-              <div class="input-group mb-32">
-                <label for="subject" >Your Subject</label>
-                <input type="text" class="input m-0" placeholder="Discuss About a Project" id="subject" />
-              </div>
-
-              <div class="input-group mb-32">
-                <label for="message" >Your Subject</label>
-                <textarea type="text" rows="4" class="input m-0" placeholder="Enter text here.." id="message" /></textarea>
-              </div>
-              
-              <button type="submit" class="button button-primary">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <section id="footer" class="bg-primary-100 py-72 border-top-25">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="footer-title text-center weight-bold text-gray-1 mb-0">Let me build the website you need.</h2>
-          </div>
-          
-          <div class="col-12 py-xxl-72 py-lg-40 py-24">
-            <div class="footer-links-module">
-              <ul class="navbar-nav d-flex flex-row flex-wrap justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link px-12 py-8 weight-semi-bold active" aria-current="page" href="#body">Home</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link px-12 py-8 weight-semi-bold" href="#about">About Me</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link px-12 py-8 weight-semi-bold" href="#portfolio">Portfolios</a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link px-12 py-8 weight-semi-bold" href="#contact">Contact</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link px-12 py-8 weight-semi-bold" href="#">Download CV</a>
-                </li>
-
-              </ul>
+                <div class="input-group mb-32">
+                  <label for="message" >Your Subject</label>
+                  <textarea type="text" rows="4" class="input m-0" placeholder="Enter text here.." id="message" /></textarea>
+                </div>
+                
+                <button type="submit" class="button button-primary">Send Message</button>
+              </form>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="col-12">
-            <div class="footer-social-links-module">
-              <ul class="navbar-nav d-flex flex-row flex-wrap justify-content-center">
-                  
-                <li class="nav-item">
-                  <a class="nav-link facebook" href="https://www.facebook.com/sumon.chondro.9/" target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link linkedin" href="https://www.linkedin.com/in/sumon-mondol-005a90149/" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link github" href="https://github.com/Sumon400011" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </li>
+      <!-- footer -->
+      <section id="footer" class="bg-primary-100 py-72 border-top-25">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="footer-title text-center weight-bold text-gray-1 mb-0">Let me build the website you need.</h2>
+            </div>
+            
+            <div class="col-12 py-xxl-72 py-lg-40 py-24">
+              <div class="footer-links-module">
+                <ul class="navbar-nav d-flex flex-row flex-wrap justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link px-12 py-8 weight-semi-bold active" aria-current="page" href="#body">Home</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link px-12 py-8 weight-semi-bold" href="#about">About Me</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link px-12 py-8 weight-semi-bold" href="#portfolio">Portfolios</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link px-12 py-8 weight-semi-bold" href="#contact">Contact</a>
+                  </li>
 
-                <!-- <li class="nav-item">
-                  <a class="nav-link twitter" href="#">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link px-12 py-8 weight-semi-bold" href="#">Download CV</a>
+                  </li>
 
-              </ul>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="footer-social-links-module">
+                <ul class="navbar-nav d-flex flex-row flex-wrap justify-content-center">
+                    
+                  <li class="nav-item">
+                    <a class="nav-link facebook" href="https://www.facebook.com/sumon.chondro.9/" target="_blank">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link linkedin" href="https://www.linkedin.com/in/sumon-mondol-005a90149/" target="_blank">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link github" href="https://github.com/Sumon400011" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+
+                  <!-- <li class="nav-item">
+                    <a class="nav-link twitter" href="#">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li> -->
+
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- copyright -->
+      <section id="copyright" class="bg-primary-300 py-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="copyright-title text-center text-xs text-gray-1 mb-0">Copyright @2022 All right reserved by Sumon Mondol</p>
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- copyright -->
-    <section id="copyright" class="bg-primary-300 py-12">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="copyright-title text-center text-xs text-gray-1 mb-0">Copyright @2022 All right reserved by Sumon Mondol</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </main>
 
     <script src="assets/js/bootstrap.min.js"></script>
 
