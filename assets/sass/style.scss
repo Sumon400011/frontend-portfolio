@@ -163,6 +163,35 @@ p{
     }
 }
 
+main{
+    overflow: hidden;
+    position: relative;
+    
+    
+    .body-bg-dotted-1{
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 26%;
+        z-index: 0;
+        max-width: 60px;
+        width: 100%;
+        height: auto;
+        opacity: 0.8;
+    }
+    .body-bg-circle-1{
+        position: absolute;
+        content: '';
+        left: -50px;
+        top: 34%;
+        z-index: 0;
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+        opacity: 0.2;
+    }
+}
+
 /* ====== Banner Section ======= */
 #intro{
     overflow: hidden;
