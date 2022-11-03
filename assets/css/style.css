@@ -141,6 +141,9 @@ p {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
+#menu .brand-logo {
+  width: 50px;
+}
 #menu nav {
   height: 80px;
 }
@@ -820,6 +823,9 @@ main .body-bg-circle-1 {
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
   }
+  #menu .brand-logo {
+    width: 40px;
+  }
   #menu nav {
     height: auto;
   }
@@ -885,6 +891,9 @@ main .body-bg-circle-1 {
   }
 }
 @media (max-width: 768px) {
+  #menu .brand-logo {
+    width: 35px;
+  }
   .sidebar .offcanvas-header,
 .sidebar .offcanvas-body,
 .section, section {

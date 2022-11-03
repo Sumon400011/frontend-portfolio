@@ -125,6 +125,10 @@ p{
         background-color: $secondary-100 !important;
         transition: 0.3s all;
     }
+    
+    .brand-logo{
+        width: 50px;
+    }
     nav{
         height: 80px;
         // background-color: $white-color;
@@ -857,6 +861,9 @@ main{
             background-color: $secondary-100 !important;
             transition: 0.3s all;
         }
+        .brand-logo{
+            width: 40px;
+        }
         nav{
             height: auto;
             
@@ -948,6 +955,11 @@ main{
 }
 
 @media (max-width: $breakpoint-768) {
+    #menu{
+        .brand-logo{
+            width: 35px;
+        }
+    }
     .sidebar .offcanvas-header,
     .sidebar .offcanvas-body,
     .section, section{
